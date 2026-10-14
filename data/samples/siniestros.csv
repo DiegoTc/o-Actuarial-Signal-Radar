@@ -1,0 +1,25 @@
+_id,Fecha Reporte,CodInstitucion,Institucion,RamoPadre,Ramo,CodMoneda,Moneda,Saldo
+47485,2018-01-31,0601,SEGUROS DAVIVIENDA,Accidentes y Enfermedades,Accidentes Personales,1,Nacional,154558.81
+47486,2018-01-31,0601,SEGUROS DAVIVIENDA,Accidentes y Enfermedades,Salud y Hospitalización,1,Nacional,2556944.7
+47487,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Dinero y Valores,1,Nacional,120702.91
+47488,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Equipo Electrónico,1,Nacional,142615.81
+47489,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Transporte Terrestre,1,Nacional,632701.15
+47492,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguros Generales,Incendio y Líneas Aliadas,1,Nacional,1734310.79
+47493,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguros Generales,Vehículos Automotores,1,Nacional,14093505.78
+47490,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguros de Vida,Vida Colectivo,1,Nacional,2886778.11
+47491,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguros de Vida,Vida Individual,1,Nacional,5394035.6
+47494,2018-01-31,0602,PALIC,Accidentes y Enfermedades,Salud y Hospitalización,1,Nacional,16694196.29
+47495,2018-01-31,0602,PALIC,Accidentes y Enfermedades,Salud y Hospitalización,2,Extranjera,22125.98
+47496,2018-01-31,0602,PALIC,Seguros de Vida,Vida Colectivo,1,Nacional,784300
+47497,2018-01-31,0602,PALIC,Seguros de Vida,Vida Individual,1,Nacional,23733.37
+47498,2018-01-31,0603,MAPFRE SEGUROS,Accidentes y Enfermedades,Accidentes Personales,1,Nacional,1443891.09
+47499,2018-01-31,0603,MAPFRE SEGUROS,Accidentes y Enfermedades,Salud y Hospitalización,1,Nacional,27085898.04
+47500,2018-01-31,0603,MAPFRE SEGUROS,Otros Seguros Generales,Otros Ramos,1,Nacional,1164823.16
+47501,2018-01-31,0603,MAPFRE SEGUROS,Otros Seguros Generales,Transporte Terrestre,1,Nacional,1246739.4300000002
+47504,2018-01-31,0603,MAPFRE SEGUROS,Seguros Generales,Incendio y Líneas Aliadas,1,Nacional,1631878.55
+47505,2018-01-31,0603,MAPFRE SEGUROS,Seguros Generales,Vehículos Automotores,1,Nacional,11558512.78
+47502,2018-01-31,0603,MAPFRE SEGUROS,Seguros de Vida,Vida Colectivo,1,Nacional,8853736.36
+47503,2018-01-31,0603,MAPFRE SEGUROS,Seguros de Vida,Vida Individual,1,Nacional,750000
+47506,2018-01-31,0604,FICOHSA SEGUROS,Accidentes y Enfermedades,Accidentes Personales,1,Nacional,112058.72
+47507,2018-01-31,0604,FICOHSA SEGUROS,Accidentes y Enfermedades,Salud y Hospitalización,1,Nacional,9229325.45
+47508,2018-01-31,0604,FICOHSA SEGUROS,Fianzas,Fidelidad,1,Nacional,75000

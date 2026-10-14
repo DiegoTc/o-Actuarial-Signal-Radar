@@ -1,0 +1,260 @@
+{
+  "policy_version": "cnbs-semantics-2026-10-03-v1",
+  "sources": [
+    {
+      "id": "dataset_metadata",
+      "url": "https://datos.cnbs.gob.hn/api/3/action/package_show?id=primas-y-siniestros",
+      "final_url": "https://datos.cnbs.gob.hn/api/3/action/package_show?id=primas-y-siniestros",
+      "http_status": 200,
+      "sha256": "cf3f1f5f7488001b3dc8339901011459aad17f32bb8181e059b9f6c756f71c36",
+      "file_size": 4365,
+      "retrieved_at": "2026-10-03T17:00:17.403432+00:00",
+      "filename": "dataset_metadata.json"
+    },
+    {
+      "id": "primas_dictionary",
+      "url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370&limit=0",
+      "final_url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370&limit=0",
+      "http_status": 200,
+      "sha256": "ac07f74cd71a6e11d2e6bd9cf915473a4bf40ca61127ea448a8d879a246d082f",
+      "file_size": 886,
+      "retrieved_at": "2026-10-03T17:00:17.646117+00:00",
+      "filename": "primas_dictionary.json"
+    },
+    {
+      "id": "siniestros_dictionary",
+      "url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=b36f83a9-d763-41da-809b-7e379fac990f&limit=0",
+      "final_url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=b36f83a9-d763-41da-809b-7e379fac990f&limit=0",
+      "http_status": 200,
+      "sha256": "df2e5915086b5f6e5ed5abe00b43d054eee235229f2242cac7337f0cd2ae0c86",
+      "file_size": 886,
+      "retrieved_at": "2026-10-03T17:00:17.859152+00:00",
+      "filename": "siniestros_dictionary.json"
+    },
+    {
+      "id": "publication_catalogue",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Cifras%20Estad%C3%ADsticas%20y%20Financieras%2FPrimas%20y%20Siniestros",
+      "final_url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Cifras%20Estad%C3%ADsticas%20y%20Financieras%2FPrimas%20y%20Siniestros",
+      "http_status": 200,
+      "sha256": "a8421464bf0d7ceaf5bf8dd2f5aa38f0afffa816f2189b7c4be9abe422a6ac37",
+      "file_size": 5630,
+      "retrieved_at": "2026-10-03T17:00:18.391006+00:00",
+      "filename": "publication_catalogue.json"
+    },
+    {
+      "id": "publication_portal",
+      "url": "https://publicaciones.cnbs.gob.hn/",
+      "final_url": "https://publicaciones.cnbs.gob.hn/",
+      "http_status": 200,
+      "sha256": "78e0ed217b3d890c2f53e5bd9a4ffbe0975b1f0d8592e50fc3b8f7726530a581",
+      "file_size": 53734,
+      "retrieved_at": "2026-10-03T17:00:18.794127+00:00",
+      "filename": "publication_portal.html"
+    },
+    {
+      "id": "manual_catalogue",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros",
+      "final_url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros",
+      "http_status": 200,
+      "sha256": "207fe5c3816d8d6350789b4e1af60273e07b977c6719c59e101a27e39b6d736f",
+      "file_size": 1606,
+      "retrieved_at": "2026-10-03T17:00:19.089266+00:00",
+      "filename": "manual_catalogue.json"
+    },
+    {
+      "id": "manual_II",
+      "url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/3-SeccionII-MC-Seguros-DG.pdf",
+      "final_url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/3-SeccionII-MC-Seguros-DG.pdf",
+      "http_status": 200,
+      "sha256": "7e1680faa58892f1586daf98abdd09a73c383dd50715467d501ec5078e01fd63",
+      "file_size": 1091298,
+      "retrieved_at": "2026-10-03T17:00:19.568629+00:00",
+      "filename": "manual_II.pdf"
+    },
+    {
+      "id": "manual_III",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/4.%20Secci%C3%B3n%20III-MC%20Seguros-CGC.pdf",
+      "final_url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/4.%20Secci%C3%B3n%20III-MC%20Seguros-CGC.pdf",
+      "http_status": 200,
+      "sha256": "afaa00472386383c2a93cbb702812fe0bb4838c7a8d8a7c9a971ce5e0e8e9012",
+      "file_size": 4290943,
+      "retrieved_at": "2026-10-03T17:00:20.426371+00:00",
+      "filename": "manual_III.pdf"
+    },
+    {
+      "id": "manual_V",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/6.%20Secci%C3%B3n%20V%20MC%20Seguros%20%20%28Modificado%20Ene%2023%29.pdf",
+      "final_url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/6.%20Secci%C3%B3n%20V%20MC%20Seguros%20%20%28Modificado%20Ene%2023%29.pdf",
+      "http_status": 200,
+      "sha256": "38d629b931e5a2a7cf1a66bd17f8522a49c7be5c692ad59de2eee77d8bbce8be",
+      "file_size": 1430857,
+      "retrieved_at": "2026-10-03T17:00:21.229993+00:00",
+      "filename": "manual_V_2023.pdf"
+    },
+    {
+      "id": "manual_VI",
+      "url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/7-SeccionVI_MC-Seguros-ModEF.pdf",
+      "final_url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/7-SeccionVI_MC-Seguros-ModEF.pdf",
+      "http_status": 200,
+      "sha256": "5d4f056b62180e29916ac205a1e41c4140654c680f17c44b884876e9af46ee28",
+      "file_size": 1172653,
+      "retrieved_at": "2026-10-03T17:00:22.267406+00:00",
+      "filename": "manual_VI.pdf"
+    },
+    {
+      "id": "manual_VII",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/8.%20Secci%C3%B3n%20VII-MC%20Seguros-Anexos.pdf",
+      "final_url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/8.%20Secci%C3%B3n%20VII-MC%20Seguros-Anexos.pdf",
+      "http_status": 200,
+      "sha256": "0e7aec323c4f133c3d9723d7150faa6a9a339fd9ab5454ec8c40f7c1defafa50",
+      "file_size": 126357,
+      "retrieved_at": "2026-10-03T17:00:22.758956+00:00",
+      "filename": "manual_VII.pdf"
+    },
+    {
+      "id": "panorama_2022",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/08.%20Boletin%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic.2022.pdf",
+      "final_url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/08.%20Boletin%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic.2022.pdf",
+      "http_status": 200,
+      "sha256": "ad32e3bdd78d59b419ee0c4195f979bb69bd28522b04caaba4e5653e32cd0ce3",
+      "file_size": 556478,
+      "retrieved_at": "2026-10-03T17:00:24.157654+00:00",
+      "filename": "panorama_2022.pdf"
+    },
+    {
+      "id": "panorama_2023",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/10.%20Boleti%CC%81n%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic_2023.pdf",
+      "final_url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/10.%20Boleti%CC%81n%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic_2023.pdf",
+      "http_status": 200,
+      "sha256": "87b309b30270e2b3a82b8d3ce761ee0354bef7dc76c11fd01ff6d3557f626671",
+      "file_size": 575536,
+      "retrieved_at": "2026-10-03T17:00:24.846448+00:00",
+      "filename": "panorama_2023.pdf"
+    }
+  ],
+  "manual_publication_observation": {
+    "id": "current_publication_observation",
+    "url": "https://app.powerbi.com/view?r=eyJrIjoiMWIzOGQwOWYtODA5Ny00MGM3LWJkNDEtYjhiOTJiOTRjNmY2IiwidCI6ImZlNDA4MTE2LWZkMTMtNDhjMy04MzJiLTc5NDU3ZGNjNmUyMyJ9&language=es&formatLocale=es-HN",
+    "provenance_url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Cifras%20Estad%C3%ADsticas%20y%20Financieras%2FPrimas%20y%20Siniestros",
+    "observed_on": "2026-10-03",
+    "method": "Manual visual inspection of CNBS-authored report linked by its official publication catalogue. No durable screenshot or PowerBI export was retained.",
+    "filters": {
+      "report_date": "2026-08-31",
+      "Moneda": "Todas",
+      "Mostrar Valor Como": "Miles de Lempiras"
+    },
+    "observed_cell": {
+      "institution": "SEGUROS DAVIVIENDA",
+      "line": "Vehículos Automotores",
+      "primas_displayed_thousands": "278838.8",
+      "raw_primas_nacional": "278838791.62"
+    },
+    "other_evidence": "CNBS premiums report describes preliminary figures and identifies the insurance NIIF/prudential framework, insurer submissions and later CNBS revision. No explicit YTD label was observed."
+  },
+  "accounting_evidence_registry": [
+    {
+      "id": "dataset_metadata",
+      "filename": "dataset_metadata.json",
+      "url": "https://datos.cnbs.gob.hn/api/3/action/package_show?id=primas-y-siniestros",
+      "evidence": "Package metadata and resource descriptions do not define Saldo."
+    },
+    {
+      "id": "primas_dictionary",
+      "filename": "primas_dictionary.json",
+      "url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370&limit=0",
+      "evidence": "Field types only; Saldo float8 and report date text."
+    },
+    {
+      "id": "siniestros_dictionary",
+      "filename": "siniestros_dictionary.json",
+      "url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=b36f83a9-d763-41da-809b-7e379fac990f&limit=0",
+      "evidence": "Same field types; no temporal/currency formula supplied."
+    },
+    {
+      "id": "publication_catalogue",
+      "filename": "publication_catalogue.json",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Cifras%20Estad%C3%ADsticas%20y%20Financieras%2FPrimas%20y%20Siniestros",
+      "evidence": "CNBS lists the current report under Mensuales, from January 2018; the linked CNBS-owned report footnote identifies the insurance NIIF/prudential framework."
+    },
+    {
+      "id": "publication_portal",
+      "filename": "publication_portal.html",
+      "url": "https://publicaciones.cnbs.gob.hn/",
+      "evidence": "CNBS explicitly warns that supervised-system figures are subject to later revision."
+    },
+    {
+      "id": "manual_catalogue",
+      "filename": "manual_catalogue.json",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros",
+      "evidence": "Official discovery of the insurance manuals, including the January 2023 account relations version."
+    },
+    {
+      "id": "manual_II",
+      "filename": "manual_II.pdf",
+      "url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/3-SeccionII-MC-Seguros-DG.pdf",
+      "pages": [
+        3,
+        4
+      ],
+      "evidence": "Monthly financial submission and balance preparation; exchange-rate rules distinguish monetary assets/liabilities from other amounts. Not a CKAN conversion specification."
+    },
+    {
+      "id": "manual_III",
+      "filename": "manual_III.pdf",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/4.%20Secci%C3%B3n%20III-MC%20Seguros-CGC.pdf",
+      "pages": [
+        2,
+        3
+      ],
+      "evidence": "Fiscal year January 1–December 31; accrual accounting and restatement of comparative amounts when classification changes."
+    },
+    {
+      "id": "manual_V",
+      "filename": "manual_V_2023.pdf",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/6.%20Secci%C3%B3n%20V%20MC%20Seguros%20%20%28Modificado%20Ene%2023%29.pdf",
+      "pages": [
+        170,
+        189
+      ],
+      "evidence": "Revenue/expense accounts accumulate; premium account 401 and claims/settlement account 501 close at year-end and permit adjustments/reclassifications. These are framework accounts, not a proven exact CKAN formula."
+    },
+    {
+      "id": "manual_VI",
+      "filename": "manual_VI.pdf",
+      "url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/7-SeccionVI_MC-Seguros-ModEF.pdf",
+      "pages": [
+        2,
+        4
+      ],
+      "evidence": "Financial information refers to last day of period; results submitted monthly within 15 working days. Functional/presentation currency Lempiras, foreign transactions translated at transaction-date rates."
+    },
+    {
+      "id": "manual_VII",
+      "filename": "manual_VII.pdf",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/8.%20Secci%C3%B3n%20VII-MC%20Seguros-Anexos.pdf",
+      "pages": [
+        2,
+        3
+      ],
+      "evidence": "Results model reports current/prior-year balances in Lempiras; separates premiums, returns/cancellations, net premiums and claims/settlement amounts."
+    },
+    {
+      "id": "panorama_2022",
+      "filename": "panorama_2022.pdf",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/08.%20Boletin%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic.2022.pdf",
+      "pages": [
+        17
+      ],
+      "evidence": "December 2022 totals: premiums L14,312.0 million and claims L6,779.7 million; both reconcile to current dumps at displayed precision."
+    },
+    {
+      "id": "panorama_2023",
+      "filename": "panorama_2023.pdf",
+      "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/10.%20Boleti%CC%81n%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic_2023.pdf",
+      "pages": [
+        15
+      ],
+      "evidence": "December 2023 premiums reconcile; claims and the 2022 claims comparator differ from current/earlier figures. Cause unresolved; not proof of a particular revised record."
+    }
+  ]
+}

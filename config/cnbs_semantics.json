@@ -1,0 +1,34 @@
+{
+  "policy_version": "cnbs-semantics-2026-10-03-v1",
+  "temporal_convention": "calendar_year_cumulative_accounting_amount",
+  "confidence": "STRONGLY SUPPORTED",
+  "basis": "Official insurance revenue/expense accounts accumulate during the accounting year and close at year-end; the official current publication links its figures to that framework. Published annual figures and a current institution/line cell reconcile with the dumps. The exact CKAN-to-account SQL mapping is not published.",
+  "required_evidence_ids": ["manual_III", "manual_V", "publication_catalogue", "panorama_2022"],
+  "allowed_scopes": [
+    {"resource": "primas", "parent_line": "Seguros Generales", "line": "Vehículos Automotores", "currency_code": "1", "currency": "Nacional"},
+    {"resource": "siniestros", "parent_line": "Seguros Generales", "line": "Vehículos Automotores", "currency_code": "1", "currency": "Nacional"}
+  ],
+  "limitations": [
+    "Derived amounts are changes in reported accounting amounts, including adjustments; not pure cash payments, accident-month claims, or earned premiums.",
+    "Exact gross/net, cancellation, incurred/paid and reserve mapping remains unresolved.",
+    "Only Automobile/Nacional is authorized; foreign categories and currency aggregation are excluded.",
+    "Current snapshots cannot prove what was known at historical dates. Actual release lags and revision vintages are unresolved.",
+    "An institution code is never bridged to another code. Name changes within a code receive review flags.",
+    "Missing or ambiguous prior months are never filled, interpolated or assumed zero."
+  ],
+  "sources": [
+    {"id": "dataset_metadata", "filename": "dataset_metadata.json", "url": "https://datos.cnbs.gob.hn/api/3/action/package_show?id=primas-y-siniestros", "evidence": "Package metadata and resource descriptions do not define Saldo."},
+    {"id": "primas_dictionary", "filename": "primas_dictionary.json", "url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370&limit=0", "evidence": "Field types only; Saldo float8 and report date text."},
+    {"id": "siniestros_dictionary", "filename": "siniestros_dictionary.json", "url": "https://datos.cnbs.gob.hn/api/3/action/datastore_search?resource_id=b36f83a9-d763-41da-809b-7e379fac990f&limit=0", "evidence": "Same field types; no temporal/currency formula supplied."},
+    {"id": "publication_catalogue", "filename": "publication_catalogue.json", "url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Cifras%20Estad%C3%ADsticas%20y%20Financieras%2FPrimas%20y%20Siniestros", "evidence": "CNBS lists the current report under Mensuales, from January 2018; the linked CNBS-owned report footnote identifies the insurance NIIF/prudential framework."},
+    {"id": "publication_portal", "filename": "publication_portal.html", "url": "https://publicaciones.cnbs.gob.hn/", "evidence": "CNBS explicitly warns that supervised-system figures are subject to later revision."},
+    {"id": "manual_catalogue", "filename": "manual_catalogue.json", "url": "https://publicaciones.cnbs.gob.hn/Home/FolderContent/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros", "evidence": "Official discovery of the insurance manuals, including the January 2023 account relations version."},
+    {"id": "manual_II", "filename": "manual_II.pdf", "url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/3-SeccionII-MC-Seguros-DG.pdf", "pages": [3, 4], "evidence": "Monthly financial submission and balance preparation; exchange-rate rules distinguish monetary assets/liabilities from other amounts. Not a CKAN conversion specification."},
+    {"id": "manual_III", "filename": "manual_III.pdf", "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/4.%20Secci%C3%B3n%20III-MC%20Seguros-CGC.pdf", "pages": [2, 3], "evidence": "Fiscal year January 1–December 31; accrual accounting and restatement of comparative amounts when classification changes."},
+    {"id": "manual_V", "filename": "manual_V_2023.pdf", "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/6.%20Secci%C3%B3n%20V%20MC%20Seguros%20%20%28Modificado%20Ene%2023%29.pdf", "pages": [170, 189], "evidence": "Revenue/expense accounts accumulate; premium account 401 and claims/settlement account 501 close at year-end and permit adjustments/reclassifications. These are framework accounts, not a proven exact CKAN formula."},
+    {"id": "manual_VI", "filename": "manual_VI.pdf", "url": "https://www.cnbs.gob.hn/files/segurosNIIF/ManualContableNIIF/7-SeccionVI_MC-Seguros-ModEF.pdf", "pages": [2, 4], "evidence": "Financial information refers to last day of period; results submitted monthly within 15 working days. Functional/presentation currency Lempiras, foreign transactions translated at transaction-date rates."},
+    {"id": "manual_VII", "filename": "manual_VII.pdf", "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Informaci%C3%B3n%20Financiera%2FManuales%20Contables%20NIIF%2FInstituciones%20de%20Seguros/8.%20Secci%C3%B3n%20VII-MC%20Seguros-Anexos.pdf", "pages": [2, 3], "evidence": "Results model reports current/prior-year balances in Lempiras; separates premiums, returns/cancellations, net premiums and claims/settlement amounts."},
+    {"id": "panorama_2022", "filename": "panorama_2022.pdf", "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/08.%20Boletin%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic.2022.pdf", "pages": [17], "evidence": "December 2022 totals: premiums L14,312.0 million and claims L6,779.7 million; both reconcile to current dumps at displayed precision."},
+    {"id": "panorama_2023", "filename": "panorama_2023.pdf", "url": "https://publicaciones.cnbs.gob.hn/Home/Viewer/Publicaciones%2BEstad%C3%ADsticas%2By%2BFinancieras%2FEstudios%2Be%2BInformes%2FPanorama%2Bdel%2BSistema%2BSupervisado/10.%20Boleti%CC%81n%20Panorama%20Sistema%20Supervisado_cifras%20a%20dic_2023.pdf", "pages": [15], "evidence": "December 2023 premiums reconcile; claims and the 2022 claims comparator differ from current/earlier figures. Cause unresolved; not proof of a particular revised record."}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "resource_id": "d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370",
+  "source_url": "https://datos.cnbs.gob.hn/datastore/dump/d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370",
+  "source_sha256": "f31720f195a754962ccb6e5fb527e7fffd41a6284201312a66e2bf3bc20bad9f",
+  "sample_rows": 24,
+  "selection": "First 24 records sorted lexicographically by Fecha Reporte, CodInstitucion, RamoPadre, Ramo, CodMoneda, _id",
+  "warning": "Samples only test parsing. They do not describe full coverage or Saldo semantics.",
+  "sha256": "6eded0f90bddf60449bd2b9350d02b6f9064db6714a7fdaeb7007d1fdfb1710b"
+}

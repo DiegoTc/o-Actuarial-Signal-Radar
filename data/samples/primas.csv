@@ -1,0 +1,25 @@
+_id,Fecha Reporte,CodInstitucion,Institucion,RamoPadre,Ramo,CodMoneda,Moneda,Saldo
+51882,2018-01-31,0601,SEGUROS DAVIVIENDA,Accidentes y Enfermadedes,Accidentes Personales,1,Nacional,1943969.91
+51883,2018-01-31,0601,SEGUROS DAVIVIENDA,Accidentes y Enfermadedes,Salud y Hospitalización,1,Nacional,3819390.000000001
+51884,2018-01-31,0601,SEGUROS DAVIVIENDA,Fianzas,Garantía,1,Nacional,2363.02
+51885,2018-01-31,0601,SEGUROS DAVIVIENDA,Fianzas,Otras Fianzas,1,Nacional,3100
+51886,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Banqueros,1,Nacional,1071545.48
+51887,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Casco Maritímo,1,Nacional,11000
+51888,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Dinero y Valores,1,Nacional,1618927.38
+51890,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Equipo Electrónico,1,Nacional,984754.17
+51889,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Equipo de Contratistas,1,Nacional,1127871.78
+51891,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Montaje,1,Nacional,33033.56
+51892,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Otros Ramos,1,Nacional,9130.44
+51893,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Responsabilidad Civil,1,Nacional,113190.35
+51894,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Rotura de Maquinaria,1,Nacional,62877.11
+51895,2018-01-31,0601,SEGUROS DAVIVIENDA,Otros Seguros Generales,Transporte Terrestre,1,Nacional,1358103.08
+51896,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguro de Vida,Vida Colectivo,1,Nacional,20094691.14
+51897,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguro de Vida,Vida Individual,1,Nacional,21447407.31
+51898,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguros Generales,Incendio y Línea Aliadas,1,Nacional,17742859.84
+51899,2018-01-31,0601,SEGUROS DAVIVIENDA,Seguros Generales,Vehículos Automotores,1,Nacional,17987107.83
+51900,2018-01-31,0602,PALIC,Accidentes y Enfermadedes,Accidentes Personales,1,Nacional,59128.05
+51901,2018-01-31,0602,PALIC,Accidentes y Enfermadedes,Salud y Hospitalización,1,Nacional,41409818.16
+51902,2018-01-31,0602,PALIC,Seguro de Vida,Vida Colectivo,1,Nacional,11093499.41
+51903,2018-01-31,0602,PALIC,Seguro de Vida,Vida Individual,1,Nacional,23505222.52
+51904,2018-01-31,0603,MAPFRE SEGUROS,Accidentes y Enfermadedes,Accidentes Personales,1,Nacional,7802928.640000001
+51905,2018-01-31,0603,MAPFRE SEGUROS,Accidentes y Enfermadedes,Salud y Hospitalización,1,Nacional,68808173.99000001
