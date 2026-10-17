@@ -1,0 +1,123 @@
+{
+  "version": "investigation-knowledge-v1",
+  "deployment_status": "NOT_UPLOADED",
+  "building_block": "EVOLUS_KNOWLEDGE_LIBRARY",
+  "no_raw_datasets": true,
+  "no_forward_followup_sections": true,
+  "documents": [
+    {
+      "id": "cnbs_semantics",
+      "path": "reports/data-profile/cnbs_semantics.md",
+      "language": "en",
+      "sections": [
+        "Decision",
+        "Separate derivation and safeguards"
+      ],
+      "case_id": null,
+      "source_sha256": "820f3f4f2ce296319a873a29299d76e4619d24462fe975025847ec83cde79a60",
+      "excerpt_sha256": "374cfc2d089fa33b66a66c335afad73b3d23139d2e07fe4d6a7a67148762be00",
+      "max_characters": 8000,
+      "upload_representation": "CURATED_SECTIONS_ONLY",
+      "purpose": "Methodology caveats or numerical case evidence, never external causal evidence"
+    },
+    {
+      "id": "replay",
+      "path": "docs/historical-replay-methodology.md",
+      "language": "en",
+      "sections": [
+        "C. Revisions and vintages",
+        "Conservative reporting lag assumption",
+        "E. Current acceptable evaluation design"
+      ],
+      "case_id": null,
+      "source_sha256": "6c3743dc9190b673f9eb0a5f3c1ec6b4ce704e00ba16e97e0ad71b93873ac791",
+      "excerpt_sha256": "d777b94850fb29ccdb660984f6ddfafd13ab49e9f0c4c2cf5257a880d328ee92",
+      "max_characters": 8000,
+      "upload_representation": "CURATED_SECTIONS_ONLY",
+      "purpose": "Methodology caveats or numerical case evidence, never external causal evidence"
+    },
+    {
+      "id": "statistical",
+      "path": "docs/statistical-baseline-methodology.md",
+      "language": "en",
+      "sections": [
+        "Robust z",
+        "Signal and status policy",
+        "Interpretation boundary"
+      ],
+      "case_id": null,
+      "source_sha256": "fc9638bbccc44706187f81f7d1ea49c6ededdb773515d9da8463ffcef377be5f",
+      "excerpt_sha256": "ba45a3a8b3d11065c4f2affdffc4766532ecab88080f9df3ed566892c9b1f0dd",
+      "max_characters": 8000,
+      "upload_representation": "CURATED_SECTIONS_ONLY",
+      "purpose": "Methodology caveats or numerical case evidence, never external causal evidence"
+    },
+    {
+      "id": "expected_behavior",
+      "path": "docs/expected-behavior-methodology.md",
+      "language": "en",
+      "sections": [
+        "Raw, expected and residual views",
+        "Economic materiality",
+        "Scientific boundary and next-stack recommendation"
+      ],
+      "case_id": null,
+      "source_sha256": "f8c0761db781101f2494450f0a4b9d48cbdcc826c9fe8cf7bffb92b7aa9d9428",
+      "excerpt_sha256": "ab8012ded85188d2f134e970fa35af7e1f0598afec433baa931eb4a10452f70f",
+      "max_characters": 8000,
+      "upload_representation": "CURATED_SECTIONS_ONLY",
+      "purpose": "Methodology caveats or numerical case evidence, never external causal evidence"
+    },
+    {
+      "id": "case_selection",
+      "path": "docs/case-study-selection-methodology.md",
+      "language": "en",
+      "sections": [
+        "Sensitivity labels",
+        "Timing and interpretation"
+      ],
+      "case_id": null,
+      "source_sha256": "6b669ac8265ad56a41ac2ecba334ad66da302e04fe4eb45063c49e2417f8d26d",
+      "excerpt_sha256": "614e90b6ec953436ca2098cb536fe2dadac4f0c0ddf29ec8124411bf525a1bf8",
+      "max_characters": 8000,
+      "upload_representation": "CURATED_SECTIONS_ONLY",
+      "purpose": "Methodology caveats or numerical case evidence, never external causal evidence"
+    },
+    {
+      "id": "market_claims_2025_09",
+      "path": "reports/case-studies/market_claims_2025_09.md",
+      "language": "en",
+      "sections": [
+        "Observed vs expected",
+        "Statistical signals",
+        "Cohort sensitivity",
+        "Negative-adjustment sensitivity",
+        "What the system cannot claim"
+      ],
+      "case_id": "market_claims_2025_09",
+      "source_sha256": "21c01bce183cfb75637ed1eea8992b51d53dfba3d5d6618d46a95871356dcbd1",
+      "excerpt_sha256": "7cf5e57a65a77239d9e6fe7f3d6883ab85cebf01db8ecf56b21c16d91af9ddd5",
+      "max_characters": 8000,
+      "upload_representation": "CURATED_SECTIONS_ONLY",
+      "purpose": "Methodology caveats or numerical case evidence, never external causal evidence"
+    },
+    {
+      "id": "market_ratio_2025_03",
+      "path": "reports/case-studies/market_ratio_2025_03.md",
+      "language": "en",
+      "sections": [
+        "Observed vs expected",
+        "Statistical signals",
+        "Cohort sensitivity",
+        "Negative-adjustment sensitivity",
+        "What the system cannot claim"
+      ],
+      "case_id": "market_ratio_2025_03",
+      "source_sha256": "5c2ed6cc333f1ee01037402c1364d0fdbc7285d11a56195b99424826104829d5",
+      "excerpt_sha256": "e992f7867df6db3f97107882c90f4bf3bef4633b347a35c5e4937d5956a446a3",
+      "max_characters": 8000,
+      "upload_representation": "CURATED_SECTIONS_ONLY",
+      "purpose": "Methodology caveats or numerical case evidence, never external causal evidence"
+    }
+  ]
+}

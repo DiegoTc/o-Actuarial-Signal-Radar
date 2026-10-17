@@ -1,0 +1,88 @@
+{
+  "name": "Actuarial Signal Investigation",
+  "version": "investigation-workflow-v1",
+  "format": "IMPLEMENTATION_PLAN_NOT_VENDOR_IMPORT_FORMAT",
+  "deployment_status": "REQUIRES_MANUAL_EVOLUS_CONFIGURATION",
+  "building_blocks": [
+    {
+      "type": "Workflow",
+      "purpose": "Queue an immutable signal handoff, coordinate investigation, return review-required output"
+    },
+    {
+      "type": "Knowledge Library",
+      "purpose": "Retrieve checksummed methodology caveats and relevant case evidence"
+    },
+    {
+      "type": "Agent",
+      "purpose": "Use the team-configured AMD/vLLM open model for evidence-aware investigation"
+    }
+  ],
+  "parameters": {
+    "language": "en|es"
+  },
+  "input_schema": "../../schemas/investigation_signal.schema.json",
+  "steps": [
+    {
+      "step": 1,
+      "name": "Receive signal",
+      "owner": "Evolus Workflow",
+      "input": "multipart input = JSON handoff from the application"
+    },
+    {
+      "step": 2,
+      "name": "Validate signal",
+      "owner": "Application preflight + configured workflow validation",
+      "contract": "Validate signal_package with the canonical schema; copy required_signal_snapshot; reject invalid input"
+    },
+    {
+      "step": 3,
+      "name": "Retrieve methodology",
+      "owner": "Evolus Knowledge Library attached to investigation agent",
+      "contract": "Retrieve only registered curated chunks relevant to this case; retain chunk IDs and hashes; no raw datasets"
+    },
+    {
+      "step": 4,
+      "name": "Investigate",
+      "owner": "Evolus agent using configured team AMD/vLLM endpoint",
+      "contract": "Use system instructions and investigation_response schema; no detection decisions"
+    },
+    {
+      "step": 5,
+      "name": "Validate response",
+      "owner": "Application postflight + configured workflow validation",
+      "contract": "Schema, immutable snapshot, registered references, model metadata, causal-language review; keep original text"
+    },
+    {
+      "step": 6,
+      "name": "Require human review",
+      "owner": "Evolus Workflow and application",
+      "contract": "HUMAN_REVIEW_REQUIRED on every branch; failures must not close incidents"
+    },
+    {
+      "step": 7,
+      "name": "Return report",
+      "owner": "Evolus Workflow result + application renderer",
+      "contract": "Return investigation, knowledge_citations, model_execution; application preserves audit and writes English/Spanish report"
+    }
+  ],
+  "result_contract": {
+    "investigation": "JSON matching investigation_response.schema.json",
+    "knowledge_citations": [
+      {
+        "id": "knowledge:<manifest document id>",
+        "sha256": "<excerpt SHA-256>"
+      }
+    ],
+    "model_execution": {
+      "provider": "amd_vllm",
+      "model": "<exact AMD_VLLM_MODEL>"
+    }
+  },
+  "manual_requirements": [
+    "Create event workspace and API key",
+    "Create Knowledge Library and upload/index curated excerpts",
+    "Add/test team AMD/vLLM endpoint and choose it in agent",
+    "Create workflow steps and language parameter; attach library; enable workflow",
+    "Inspect Completed execution shape and set EVOLUS_RESULT_POINTER; retain native export/run logs"
+  ]
+}

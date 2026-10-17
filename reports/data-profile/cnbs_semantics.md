@@ -1,6 +1,12 @@
 # CNBS data semantics validation — Phase 1.5
 
+> Phase 2 implementation update: statistical baselines and the lagged retrospective backtest are now implemented. See [Phase 2 results](../statistical-baseline/baseline_summary.md) and [statistical methodology](../../docs/statistical-baseline-methodology.md). Earlier phase decisions and measurements below are retained as historical records. Strict point-in-time validity remains NOT VALIDATED.
+
 Assessment date: 2026-10-03. Scope: official CNBS Primas and Siniestros dumps already ingested in Phase 1. **No historical replay or anomaly detection is implemented.**
+
+## Current methodology update — 2026-10-14
+
+Phase 1.5 is complete for Automobile/Nacional under the restricted accounting-increment interpretation below. **RETROSPECTIVE_BACKTEST_READY**; current mode **LAGGED_RETROSPECTIVE_BACKTEST**, assumption **CONSERVATIVE_TWO_MONTHS**; **STRICT_POINT_IN_TIME_NOT_VALIDATED**. Phase 2 may proceed with the current snapshot, while Phase 1.6 remains partial and non-blocking. The October 3 retrieval proves August 2026 availability by that date (33-day upper bound), not an exact release date or general historical lag. See the [methodology and research decision](../../docs/historical-replay-methodology.md) and [replay readiness](replay_readiness.md). The October 3 evidence and measurements below are preserved.
 
 ## Decision
 
@@ -61,7 +67,7 @@ The policy is versioned in [config/cnbs_semantics.json](../../config/cnbs_semant
 - Negative increments are retained and flagged, never clipped. Same-code institution-name changes are flagged; different codes, parent/line labels and currencies are never bridged. A code/name transition is not proof of legal continuity.
 - An optional earlier raw baseline compares same-key amount/label changes and flags affected current/next-month differences. Added/deleted or ambiguous keys are separately reported. A December revision never contaminates January derivation. Snapshot differences do not establish an economic cause or original availability date.
 
-`derived_*` means arithmetic was possible under this evidence policy, not that every amount is fully validated. `_review` requires investigation before replay. `blocked_*` has no monthly amount and must not be silently filtered or filled.
+`derived_*` means arithmetic was possible under this evidence policy, not that every amount is fully validated. `_review` requires documented treatment in retrospective evaluation and further investigation before economic interpretation. `blocked_*` has no monthly amount and must not be silently filtered or filled.
 
 ## Automobile / Nacional results
 
@@ -99,7 +105,7 @@ All four commands succeeded on 2026-10-03. Evidence archiving retrieved all 13 c
 
 Research and source selection are reviewed human evidence; the fetch command archives sources but does not regenerate their interpretation automatically. The checked-in report describes the recorded source/raw hashes, not any future CNBS update. A future semantic/accounting change requires reassessing the policy, not merely rerunning arithmetic.
 
-## Remaining blockers and Phase 2 decision
+## Remaining research and current Phase 2 decision
 
 1. Obtain a CNBS field-specific definition/extraction account mapping for premiums and claims, including cancellations, paid/incurred claims, reserve movements and reinsurance treatment; confirm consistency across 2018–2026.
 2. Resolve the 2023 annual claims discrepancy and the causes of the 20 negative Automobile differences. Do not label them revisions or economic signals by assumption.
@@ -107,7 +113,7 @@ Research and source selection are reviewed human evidence; the fetch command arc
 4. Establish institution continuity and a reviewed cohort policy; keep ASSA codes separate until confirmed and review changing labels.
 5. Before expanding beyond Nacional, obtain the original foreign currency, conversion rule and scaling from CNBS.
 
-**Decision: monthly reported accounting increments can be derived with the documented restrictions; Automobile is not yet ready for point-in-time historical replay.** It remains the strongest candidate for subsequent validation because of its complete shared cohort. No Phase 2 work has been started.
+**Current decision (2026-10-14): Phase 2 may proceed with a lagged retrospective backtest of the current snapshot using the conservative two-month reporting lag.** Monthly reported accounting increments retain the documented restrictions. Strict point-in-time replay remains unvalidated; release-date/vintage reconstruction is a partial, non-blocking Phase 1.6 track. The research items above remain relevant to interpretation, cohort treatment and future expansion. No statistical baseline or backtest has been implemented. See the [methodology](../../docs/historical-replay-methodology.md).
 
 ## Source archive
 

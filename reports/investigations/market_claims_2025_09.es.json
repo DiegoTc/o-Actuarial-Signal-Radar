@@ -1,0 +1,403 @@
+{
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "validation_status": "PASS",
+  "validation_issues": [],
+  "human_review_required": true,
+  "signal": {
+    "schema_version": "investigation-signal-v1",
+    "signal_id": "market_claims_2025_09",
+    "case_classification": "FLAGSHIP",
+    "analysis_level": "market",
+    "metric": "monthly_claims",
+    "institution_code": "",
+    "institution_name": "Observed eligible market",
+    "resource": "siniestros",
+    "report_date": "2025-09-30",
+    "availability_date": "2025-12-01",
+    "observed_value": 185377003.67,
+    "expected_value": 142434137.475,
+    "residual": 42942866.19499999,
+    "relative_residual": 0.30149279488940856,
+    "detector_reference": "residual_robust_z_12_months",
+    "robust_z_score": 11.015446264198951,
+    "standard_z_score": 4.1732153424686524,
+    "cusum_state": {
+      "level": "WATCH",
+      "score": 3.6732153424686524,
+      "positive": 3.6732153424686524,
+      "negative": 0.0
+    },
+    "persistence_context": {
+      "scope": "DECISION_TIME_ONLY",
+      "backward_robust_run": 1,
+      "backward_cusum_run": 1,
+      "periods": [
+        {
+          "report_date": "2025-06-30",
+          "availability_date": "2025-09-01",
+          "relative_month": -3,
+          "residual": 16934269.277499974,
+          "adjusted_signal_level": "ALERT",
+          "robust_z_score": 4.4363097579540085,
+          "cusum_level": "NORMAL",
+          "cusum_positive": 1.4228858618369835,
+          "cusum_negative": 0.0,
+          "context_status": "RECORDED",
+          "known_by_signal_date": true
+        },
+        {
+          "report_date": "2025-07-31",
+          "availability_date": "2025-10-01",
+          "relative_month": -2,
+          "residual": -3902951.4924999774,
+          "adjusted_signal_level": "NORMAL",
+          "robust_z_score": -0.5685065539759296,
+          "cusum_level": "NORMAL",
+          "cusum_positive": 0.18202983340275747,
+          "cusum_negative": -0.24085602843422604,
+          "context_status": "RECORDED",
+          "known_by_signal_date": true
+        },
+        {
+          "report_date": "2025-08-31",
+          "availability_date": "2025-11-01",
+          "relative_month": -1,
+          "residual": -7108832.530000001,
+          "adjusted_signal_level": "NORMAL",
+          "robust_z_score": -1.5332078814707548,
+          "cusum_level": "NORMAL",
+          "cusum_positive": 0.0,
+          "cusum_negative": -0.874039606487288,
+          "context_status": "RECORDED",
+          "known_by_signal_date": true
+        },
+        {
+          "report_date": "2025-09-30",
+          "availability_date": "2025-12-01",
+          "relative_month": 0,
+          "residual": 42942866.19499999,
+          "adjusted_signal_level": "ALERT",
+          "robust_z_score": 11.015446264198951,
+          "cusum_level": "WATCH",
+          "cusum_positive": 3.6732153424686524,
+          "cusum_negative": 0.0,
+          "context_status": "RECORDED",
+          "known_by_signal_date": true
+        }
+      ]
+    },
+    "raw_signal_level": "ALERT",
+    "adjusted_signal_level": "ALERT",
+    "materiality_level": "HIGH",
+    "contributing_institutions": {
+      "contributing_institutions": 11,
+      "excluded_institutions": 0,
+      "review_flagged_institutions": 0,
+      "blocked_contributors": 0,
+      "negative_contributors": 0,
+      "premium_contributing_institutions": null,
+      "claims_contributing_institutions": null,
+      "premium_excluded_institutions": null,
+      "claims_excluded_institutions": null,
+      "premium_review_flagged_institutions": null,
+      "claims_review_flagged_institutions": null,
+      "premium_blocked_contributors": null,
+      "claims_blocked_contributors": null,
+      "premium_negative_contributors": null,
+      "claims_negative_contributors": null
+    },
+    "quality_flags": [
+      "model_fit_review_sensitive"
+    ],
+    "composition_flags": [],
+    "data_quality_risk": "MEDIUM",
+    "quality_context": {
+      "source_derivation_status": "derived_consecutive_month",
+      "negative_review_sensitive": "False",
+      "trend_training_negative_count": "1",
+      "trend_training_review_count": "3",
+      "seasonal_training_review_count": "2",
+      "contributor_codes": "0601;0603;0604;0606;0608;0609;0612;0613;0615;0617;0618",
+      "premium_contributor_codes": "",
+      "claims_contributor_codes": ""
+    },
+    "cohort_sensitivity": "ROBUST",
+    "negative_adjustment_sensitivity": "UNAFFECTED",
+    "trend_window_sensitivity": "ALERT",
+    "sensitivity_results": [
+      {
+        "scenario": "fixed_cohort_sensitivity",
+        "status": "scored",
+        "adjusted_signal_level": "ALERT",
+        "robust_z_score": 7.599987084506023,
+        "residual": 41978971.52250001
+      },
+      {
+        "scenario": "negative_fit_sensitivity",
+        "status": "scored",
+        "adjusted_signal_level": "ALERT",
+        "robust_z_score": 5.071461251755308,
+        "residual": 44426956.43000001
+      },
+      {
+        "scenario": "trend_window_sensitivity",
+        "status": "scored",
+        "adjusted_signal_level": "ALERT",
+        "robust_z_score": 9.266997351764443,
+        "residual": 46435691.349999994
+      }
+    ],
+    "case_study_score": 13,
+    "case_study_score_purpose": "DEMO_SUITABILITY_NOT_ANOMALY_SCORE",
+    "source_report_paths": [
+      "reports/case-studies/market_claims_2025_09.md",
+      "reports/case-studies/case_selection_summary.md"
+    ],
+    "sources": [
+      {
+        "path": "data/processed/cnbs/expected-behavior/expected_behavior_manifest.json",
+        "sha256": "a2ea5149bf2547ed839e720d1b19f8969ac2efea689bcccf401a5b7e98df3a4b"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/fixed_cohort_sensitivity.csv",
+        "sha256": "737e5cb7c27b119a749472887e2a927dc807921ab67aea99cd36423c18988865"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/negative_fit_sensitivity.csv",
+        "sha256": "b0f3beacec213dbf4336351d63d6a9f2b9b67d54789e5c7afbd71ecda5c3c1bf"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/primary_dynamic.csv",
+        "sha256": "9091051504b5b05f36b22480057e5dd24045e1009ef84dd1abd3080a36add4ed"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/trend_window_sensitivity.csv",
+        "sha256": "b98ecf2486736c68bbdaa6898b172820fb3ef890a6391e8118d662184f1961c2"
+      },
+      {
+        "path": "reports/case-studies/candidate_evaluations.csv",
+        "sha256": "2814f89a0c0d2b59cb1d0f6223a458dbbf5816d532e7f3693da8675ef329cf33"
+      },
+      {
+        "path": "reports/case-studies/case_selection_manifest.json",
+        "sha256": "48e3e23a1f3fa07281c83cf36adbae6a3b0c9a1c38be55aca82df37be32eaff9"
+      },
+      {
+        "path": "reports/case-studies/case_selection_summary.md",
+        "sha256": "3623b5269ca8a3b15adc446176c9737a94811da91b4993a09d0f6bc06b87522f"
+      },
+      {
+        "path": "reports/case-studies/market_claims_2025_09.md",
+        "sha256": "21c01bce183cfb75637ed1eea8992b51d53dfba3d5d6618d46a95871356dcbd1"
+      },
+      {
+        "path": "reports/case-studies/surrounding_periods.csv",
+        "sha256": "2f477e8008540c8d393368e77773c8e1332249e18ccb1ee790a4cf400965c026"
+      }
+    ],
+    "methodology_version": "expected-behavior-v1 / statistical-baseline-v1 / case-selection-phase3.5",
+    "replay_mode": "LAGGED_RETROSPECTIVE_BACKTEST",
+    "strict_point_in_time_status": "NOT_VALIDATED",
+    "snapshot_evaluation_cutoff": "2026-10-03",
+    "investigation_mode": "RETROSPECTIVE_CASE_REVIEW",
+    "limitations": [
+      "Current historical snapshot may contain later revisions; exact releases/vintages are unavailable.",
+      "Conservative calendar lag is a modeling assumption, not the CNBS publication schedule.",
+      "Fixed-cohort membership uses hindsight; case suitability is not an anomaly score.",
+      "UNAFFECTED preserves signal classification/residual tolerance, not numerical calibration stability.",
+      "Materiality bands are exploratory; claims_to_premiums_ratio is not a validated actuarial loss ratio.",
+      "Forward follow-up is excluded from this package; full case reports contain retrospective follow-up.",
+      "Statistical deviations do not establish cause or continued growth."
+    ]
+  },
+  "investigation": {
+    "data_quality_considerations": [
+      {
+        "evidence_refs": [
+          "signal:/data_quality_risk",
+          "signal:/quality_flags"
+        ],
+        "status": "FACT",
+        "text": "data_quality_risk=MEDIUM; quality_flags=model_fit_review_sensitive"
+      }
+    ],
+    "economic_materiality": {
+      "evidence_refs": [
+        "signal:/materiality_level",
+        "signal:/residual"
+      ],
+      "explanation": "Bandas exploratorias; no son límites de capital ni de presupuesto.",
+      "level": "HIGH",
+      "unit": "Lempiras"
+    },
+    "executive_summary": "MOCK: salida determinista para probar la integración; no se ha realizado una investigación de IA.",
+    "human_review_required": true,
+    "investigation_questions": [
+      "¿Aumentó la frecuencia de siniestros o su severidad media?",
+      "¿Cambiaron los costos de reparación o la composición de la cartera?",
+      "¿Hubo un ajuste contable o de reporte?",
+      "¿Qué instituciones contribuyeron más al movimiento?",
+      "¿Existe evidencia oficial de un evento externo y cuándo fue pública?"
+    ],
+    "language": "es",
+    "limitations": [
+      "MOCK: no hubo llamada a AMD ni a Evolus.",
+      "LAGGED RETROSPECTIVE BACKTEST; strict point-in-time NOT VALIDATED.",
+      "No se establece una causa. claims_to_premiums_ratio no es un loss ratio actuarial validado."
+    ],
+    "persistence_assessment": "No se infiere persistencia futura. Revisar únicamente la secuencia conocida hasta availability_date.",
+    "possible_hypotheses": [],
+    "recommended_next_checks": [
+      "Desglosar por institución sin fusionar códigos.",
+      "Solicitar frecuencia, severidad y notas contables oficiales.",
+      "Revisar los valores numéricos de las sensibilidades, no solo ALERT."
+    ],
+    "schema_version": "investigation-response-v1",
+    "signal_id": "market_claims_2025_09",
+    "signal_snapshot": {
+      "adjusted_signal_level": "ALERT",
+      "availability_date": "2025-12-01",
+      "expected_value": 142434137.475,
+      "materiality_level": "HIGH",
+      "observed_value": 185377003.67,
+      "raw_signal_level": "ALERT",
+      "relative_residual": 0.30149279488940856,
+      "report_date": "2025-09-30",
+      "residual": 42942866.19499999,
+      "signal_id": "market_claims_2025_09"
+    },
+    "statistical_evidence": [
+      {
+        "evidence_refs": [
+          "signal:/robust_z_score",
+          "signal:/standard_z_score",
+          "signal:/adjusted_signal_level"
+        ],
+        "status": "OBSERVATION",
+        "text": "robust_z_score=11.01544626; standard_z_score=4.1732153424686524; adjusted_signal_level=ALERT"
+      },
+      {
+        "evidence_refs": [
+          "signal:/cusum_state",
+          "signal:/sensitivity_results"
+        ],
+        "status": "FACT",
+        "text": "cusum_state={'level': 'WATCH', 'score': 3.6732153424686524, 'positive': 3.6732153424686524, 'negative': 0.0}; sensitivity_results=[{'scenario': 'fixed_cohort_sensitivity', 'status': 'scored', 'adjusted_signal_level': 'ALERT', 'robust_z_score': 7.599987084506023, 'residual': 41978971.52250001}, {'scenario': 'negative_fit_sensitivity', 'status': 'scored', 'adjusted_signal_level': 'ALERT', 'robust_z_score': 5.071461251755308, 'residual': 44426956.43000001}, {'scenario': 'trend_window_sensitivity', 'status': 'scored', 'adjusted_signal_level': 'ALERT', 'robust_z_score': 9.266997351764443, 'residual': 46435691.349999994}]"
+      }
+    ],
+    "status": "mock",
+    "what_changed": [
+      {
+        "evidence_refs": [
+          "signal:/observed_value",
+          "signal:/expected_value",
+          "signal:/residual",
+          "signal:/raw_signal_level",
+          "signal:/adjusted_signal_level"
+        ],
+        "status": "OBSERVATION",
+        "text": "El residual guardado es 42,942,866.19 Lempiras: observed_value − expected_value."
+      }
+    ]
+  },
+  "provenance": {
+    "signal_source": [
+      {
+        "path": "data/processed/cnbs/expected-behavior/expected_behavior_manifest.json",
+        "sha256": "a2ea5149bf2547ed839e720d1b19f8969ac2efea689bcccf401a5b7e98df3a4b"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/fixed_cohort_sensitivity.csv",
+        "sha256": "737e5cb7c27b119a749472887e2a927dc807921ab67aea99cd36423c18988865"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/negative_fit_sensitivity.csv",
+        "sha256": "b0f3beacec213dbf4336351d63d6a9f2b9b67d54789e5c7afbd71ecda5c3c1bf"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/primary_dynamic.csv",
+        "sha256": "9091051504b5b05f36b22480057e5dd24045e1009ef84dd1abd3080a36add4ed"
+      },
+      {
+        "path": "data/processed/cnbs/expected-behavior/trend_window_sensitivity.csv",
+        "sha256": "b98ecf2486736c68bbdaa6898b172820fb3ef890a6391e8118d662184f1961c2"
+      },
+      {
+        "path": "reports/case-studies/candidate_evaluations.csv",
+        "sha256": "2814f89a0c0d2b59cb1d0f6223a458dbbf5816d532e7f3693da8675ef329cf33"
+      },
+      {
+        "path": "reports/case-studies/case_selection_manifest.json",
+        "sha256": "48e3e23a1f3fa07281c83cf36adbae6a3b0c9a1c38be55aca82df37be32eaff9"
+      },
+      {
+        "path": "reports/case-studies/case_selection_summary.md",
+        "sha256": "3623b5269ca8a3b15adc446176c9737a94811da91b4993a09d0f6bc06b87522f"
+      },
+      {
+        "path": "reports/case-studies/market_claims_2025_09.md",
+        "sha256": "21c01bce183cfb75637ed1eea8992b51d53dfba3d5d6618d46a95871356dcbd1"
+      },
+      {
+        "path": "reports/case-studies/surrounding_periods.csv",
+        "sha256": "2f477e8008540c8d393368e77773c8e1332249e18ccb1ee790a4cf400965c026"
+      }
+    ],
+    "case_study_source": [
+      "reports/case-studies/market_claims_2025_09.md",
+      "reports/case-studies/case_selection_summary.md"
+    ],
+    "signal_package_sha256": "b38b7575861c83427a6466fbb253723e08d1ff7cb43d92827f8003a0b4d02f8b",
+    "configuration_version": "investigation-v1",
+    "provider": "mock",
+    "model_name": "deterministic-placeholder-v1",
+    "prompt_version": "evidence-investigation-v1",
+    "prompt_sha256": "fc9915c3c0152944c2c1700d07573c708bf7563658e98e287741702c678d5f9f",
+    "model_endpoint_sha256": null,
+    "response_schema_sha256": "a28ca877b317580b34c8f4cbbd31a257b401c4f27c5e290fd8fbc8a4a3f55066",
+    "generated_at": "2026-10-16T03:46:20.762046+00:00",
+    "language": "es",
+    "orchestrator": "local",
+    "knowledge": {
+      "manifest_path": "evolus/knowledge/manifest.json",
+      "manifest_sha256": "5058a3c578583cd1a3c81d577359f876e5d3f844262652efd027c0f135aba9d9",
+      "retrieval": "LOCAL_MANIFEST_EXCERPTS_NOT_EVOLUS",
+      "documents": [
+        {
+          "id": "knowledge:cnbs_semantics",
+          "sha256": "374cfc2d089fa33b66a66c335afad73b3d23139d2e07fe4d6a7a67148762be00"
+        },
+        {
+          "id": "knowledge:replay",
+          "sha256": "d777b94850fb29ccdb660984f6ddfafd13ab49e9f0c4c2cf5257a880d328ee92"
+        },
+        {
+          "id": "knowledge:statistical",
+          "sha256": "ba45a3a8b3d11065c4f2affdffc4766532ecab88080f9df3ed566892c9b1f0dd"
+        },
+        {
+          "id": "knowledge:expected_behavior",
+          "sha256": "ab8012ded85188d2f134e970fa35af7e1f0598afec433baa931eb4a10452f70f"
+        },
+        {
+          "id": "knowledge:case_selection",
+          "sha256": "614e90b6ec953436ca2098cb536fe2dadac4f0c0ddf29ec8124411bf525a1bf8"
+        },
+        {
+          "id": "knowledge:market_claims_2025_09",
+          "sha256": "7cf5e57a65a77239d9e6fe7f3d6883ab85cebf01db8ecf56b21c16d91af9ddd5"
+        }
+      ]
+    },
+    "replay_mode": "LAGGED_RETROSPECTIVE_BACKTEST",
+    "strict_point_in_time_status": "NOT_VALIDATED",
+    "amd_hardware_execution_verified": false,
+    "evolus_execution_verified": false,
+    "request_settings": {
+      "timeout_seconds": 60.0,
+      "temperature": 0,
+      "max_tokens": 2500
+    }
+  },
+  "audit_path": "reports/investigations/market_claims_2025_09.2026-10-16T034620.762046_0000.es.audit.json"
+}

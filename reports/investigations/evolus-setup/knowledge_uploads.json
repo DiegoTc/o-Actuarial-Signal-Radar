@@ -1,0 +1,82 @@
+{
+  "library": {
+    "id": "d2aca892-20c9-f111-bf5b-000d3aae6dc8",
+    "name": "ActuarialSignalRadarMemory1",
+    "applicationId": "4eaccc3d-45ac-4f36-883f-8dbd307c471c",
+    "embeddingModelKey": "openai/text-embedding-3-small",
+    "type": 0
+  },
+  "documents": [
+    {
+      "id": "knowledge:cnbs_semantics",
+      "document_id": "1a71d282-d54a-40b3-a61a-1ef75935d6fd",
+      "title": "cnbs_semantics.md",
+      "excerpt_sha256": "374cfc2d089fa33b66a66c335afad73b3d23139d2e07fe4d6a7a67148762be00",
+      "ingestion_status": 2,
+      "ingestion_error": null,
+      "content_verified": true,
+      "chunk_count": 2
+    },
+    {
+      "id": "knowledge:replay",
+      "document_id": "4d4ce8cb-eb3f-435f-a56a-a31e5e211b6a",
+      "title": "replay.md",
+      "excerpt_sha256": "d777b94850fb29ccdb660984f6ddfafd13ab49e9f0c4c2cf5257a880d328ee92",
+      "ingestion_status": 2,
+      "ingestion_error": null,
+      "content_verified": true,
+      "chunk_count": 3
+    },
+    {
+      "id": "knowledge:statistical",
+      "document_id": "d3beb26a-48a1-4a45-8dd0-409445c800a8",
+      "title": "statistical.md",
+      "excerpt_sha256": "ba45a3a8b3d11065c4f2affdffc4766532ecab88080f9df3ed566892c9b1f0dd",
+      "ingestion_status": 2,
+      "ingestion_error": null,
+      "content_verified": true,
+      "chunk_count": 2
+    },
+    {
+      "id": "knowledge:expected_behavior",
+      "document_id": "4838d01d-c52f-4f00-89e4-37598e7fe86d",
+      "title": "expected_behavior.md",
+      "excerpt_sha256": "ab8012ded85188d2f134e970fa35af7e1f0598afec433baa931eb4a10452f70f",
+      "ingestion_status": 2,
+      "ingestion_error": null,
+      "content_verified": true,
+      "chunk_count": 3
+    },
+    {
+      "id": "knowledge:case_selection",
+      "document_id": "4ef10a6d-e617-4638-8539-49e322e14ef5",
+      "title": "case_selection.md",
+      "excerpt_sha256": "614e90b6ec953436ca2098cb536fe2dadac4f0c0ddf29ec8124411bf525a1bf8",
+      "ingestion_status": 2,
+      "ingestion_error": null,
+      "content_verified": true,
+      "chunk_count": 2
+    },
+    {
+      "id": "knowledge:market_claims_2025_09",
+      "document_id": "16584e0b-60ff-459d-a55c-dcabcddfb32f",
+      "title": "market_claims_2025_09.md",
+      "excerpt_sha256": "7cf5e57a65a77239d9e6fe7f3d6883ab85cebf01db8ecf56b21c16d91af9ddd5",
+      "ingestion_status": 2,
+      "ingestion_error": null,
+      "content_verified": true,
+      "chunk_count": 2
+    },
+    {
+      "id": "knowledge:market_ratio_2025_03",
+      "document_id": "f1f3e34b-1ec6-4d15-bece-f3ac9b993162",
+      "title": "market_ratio_2025_03.md",
+      "excerpt_sha256": "e992f7867df6db3f97107882c90f4bf3bef4633b347a35c5e4937d5956a446a3",
+      "ingestion_status": 2,
+      "ingestion_error": null,
+      "content_verified": true,
+      "chunk_count": 2
+    }
+  ],
+  "status": "INDEXED_CONTENT_VERIFIED"
+}

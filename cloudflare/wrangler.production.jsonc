@@ -1,0 +1,13 @@
+{
+  "name": "actuarial-signal-radar",
+  "main": "entry.mjs",
+  "compatibility_date": "2026-10-16",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "upload_source_maps": false,
+  "assets": {"directory": ".open-next/assets", "binding": "ASSETS"},
+  "vars": {"PUBLIC_BACKEND_URL": "https://actuarial-signal-radar-api-production.up.railway.app"},
+  "secrets": {"required": ["DASHBOARD_BACKEND_TOKEN"]},
+  "observability": {"enabled": false}
+}

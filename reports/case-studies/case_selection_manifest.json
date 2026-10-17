@@ -1,0 +1,54 @@
+{
+  "phase": "3.5",
+  "mode": "SAVED_OUTPUT_CASE_SELECTION_ONLY",
+  "replay_mode": "LAGGED_RETROSPECTIVE_BACKTEST",
+  "strict_point_in_time": "NOT_VALIDATED",
+  "evaluation_end": "2026-10-03",
+  "source_sha256": {
+    "expected_behavior_manifest.json": "a2ea5149bf2547ed839e720d1b19f8969ac2efea689bcccf401a5b7e98df3a4b",
+    "primary_dynamic.csv": "9091051504b5b05f36b22480057e5dd24045e1009ef84dd1abd3080a36add4ed",
+    "fixed_cohort_sensitivity.csv": "737e5cb7c27b119a749472887e2a927dc807921ab67aea99cd36423c18988865",
+    "negative_fit_sensitivity.csv": "b0f3beacec213dbf4336351d63d6a9f2b9b67d54789e5c7afbd71ecda5c3c1bf",
+    "trend_window_sensitivity.csv": "b98ecf2486736c68bbdaa6898b172820fb3ef890a6391e8118d662184f1961c2"
+  },
+  "candidates_evaluated": 122,
+  "selected": [
+    "market_claims_2025_09",
+    "market_ratio_2025_03",
+    "institution_0608_premiums_2024_08",
+    "institution_0603_claims_2024_05"
+  ],
+  "implementation_sha256": {
+    "__init__.py": "bc655bdaf4a42dbe7c82b4c9d316c443fc85ffd827a95ede1e1dc7da6a21e65d",
+    "charts.py": "87370f0fade8651895823ba6c51ab3d54852f0ca8a087cdc286963cbd7840471",
+    "reporting.py": "28269f718d8a7f9719e59012da4fde0bc6f18f945404b3af768842aa662d10c1",
+    "run.py": "7566efebb8bc17df05c28939ac3d7dd0cb6b7b130d2eed7b11910c0bb129f838",
+    "selection.py": "3ff63cb0a32dc066c5dfc175dffef00b22308a906fe9c45f922f482cd539c92b"
+  },
+  "output_sha256": {
+    "candidate_evaluations.csv": "2814f89a0c0d2b59cb1d0f6223a458dbbf5816d532e7f3693da8675ef329cf33",
+    "case_selection_summary.md": "3623b5269ca8a3b15adc446176c9737a94811da91b4993a09d0f6bc06b87522f",
+    "case_study_index.es.md": "da3947a93a2d1f07c5e5073db2954cb5b2e7175b976c825731554db35311c295",
+    "case_study_index.md": "483c42a9a878b5bd4e3f2cbd4351b9a51fc2527de3db0a10b509e9a5cf3227b8",
+    "charts/market_claims_2025_09_cusum.png": "58b66cde4acc12c5e69d5e9d0c9287d58ca414f9043eb1784236be2fb9d45040",
+    "charts/market_claims_2025_09_observed_expected.png": "ec7d4eba6d134346766d8df8b52d6ca51c498fd9037c1ffc3ded1d8959c26013",
+    "charts/market_claims_2025_09_residual.png": "0523fbf797472cc894b8dcceb02fa5471d10b62f9c9671a464d59a041a023813",
+    "charts/market_claims_2025_09_signals.png": "86b89323ba29f5b2261829250a8fe2aabd460a8f3f5110092cb55417b832c061",
+    "charts/market_ratio_2025_03_cusum.png": "3a1478a7a0681ceeea6c03a3a7e7880f3594042709e00d29e1099a52f992e344",
+    "charts/market_ratio_2025_03_observed_expected.png": "af296b6b35999ada64a2679d5e7839b8ad464df540da66ecd4946917546665cd",
+    "charts/market_ratio_2025_03_residual.png": "5f43985acc36a1503db9ea9c46d337414e86f755e9ecd5eb1fa29459bb4ad1eb",
+    "charts/market_ratio_2025_03_signals.png": "3b490cdeaaee838a595b4d34b6249ce436ba6b687416ea6d38363ce5db935f1d",
+    "institution_0603_claims_2024_05.md": "eeb018ac8d2014cb73c7ddd0e76294ff844f58470533df786ed6ca4a29c2aa07",
+    "institution_0608_premiums_2024_08.md": "7de883d6c0c33401e71261f4c2ebcf67e3039782edb00ec10aacd10411383deb",
+    "institution_0613_claims_2025_09.md": "6982b1935f30039e26a7bffed8371f99c77f340142e3bcd02978342264681b45",
+    "institution_0617_premiums_2026_03.md": "ec5f38417685b7b45c2477c571f9b4ccca30c6e5ace900fc01fedaf8ff0885a6",
+    "market_claims_2025_02.md": "4ab2179f4d81dfb6ca4daecd5488263e96a125e6fdac0a7090f8f909dc8b64d7",
+    "market_claims_2025_06.md": "d8c36af20b6dca248abb1ba1399231defc157ca0830bc604cea4514bc2d5f8f6",
+    "market_claims_2025_09.es.md": "7a4ae32404181f19e18a1bd77cae739bef2ba7e4a3fc5d36c7812544ed035069",
+    "market_claims_2025_09.md": "21c01bce183cfb75637ed1eea8992b51d53dfba3d5d6618d46a95871356dcbd1",
+    "market_ratio_2025_03.es.md": "34f407e93822e93fcf921223d88db6ae5b81efc4a6195113d52a04ca0202709f",
+    "market_ratio_2025_03.md": "5c2ed6cc333f1ee01037402c1364d0fdbc7285d11a56195b99424826104829d5",
+    "phase35-validation.md": "2542a3e84354c53caa8aa60e984a8186fa9a410726cbef0f30f5d7dfa3597ccf",
+    "surrounding_periods.csv": "2f477e8008540c8d393368e77773c8e1332249e18ccb1ee790a4cf400965c026"
+  }
+}

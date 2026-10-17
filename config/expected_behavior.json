@@ -1,0 +1,17 @@
+{
+  "policy_version": "expected-behavior-v1",
+  "evaluation_end": "2026-10-03",
+  "detector_config": "statistical_backtest.json",
+  "trend_method": "rolling_median",
+  "trend_window": 12,
+  "minimum_trend_history": 9,
+  "seasonal_method": "additive",
+  "minimum_seasonal_history": 2,
+  "seasonal_lookback_years": 6,
+  "relative_denominator_floor": 1e-9,
+  "composition_change_fraction": 0.1,
+  "materiality": {"medium_quantile": 0.75, "high_quantile": 0.95, "minimum_history": 12, "history_window": 36},
+  "fixed_cohort_codes": ["0601", "0603", "0604", "0606", "0608", "0609", "0612", "0613", "0615", "0617"],
+  "sensitivity_trend_window": 24,
+  "institution_modeling": true
+}

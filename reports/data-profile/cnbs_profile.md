@@ -1,5 +1,9 @@
 # CNBS Data Foundation profile
 
+> Phase 2 implementation update: statistical baselines and the lagged retrospective backtest are now implemented. See [Phase 2 results](../statistical-baseline/baseline_summary.md) and [statistical methodology](../../docs/statistical-baseline-methodology.md). Earlier phase decisions and measurements below are retained as historical records. Strict point-in-time validity remains NOT VALIDATED.
+
+> Historical Phase 1 record: the findings, command results and phase restrictions below describe the original validation scope. Phase 1.5 subsequently supported restricted Automobile/Nacional monthly accounting increments. As of 2026-10-14, Phase 2 may proceed with a **lagged retrospective backtest using the conservative two-month reporting lag**; Phase 1.6 is partial and non-blocking. Strict point-in-time replay is not validated. See the [current methodology](../../docs/historical-replay-methodology.md) and [replay readiness](replay_readiness.md). Original evidence and measurements are preserved.
+
 Official dataset: https://datos.cnbs.gob.hn/dataset/primas-y-siniestros
 
 Reproduce with `docker compose run --rm app python scripts/profile_cnbs.py`. Input checksums identify the exact snapshots.

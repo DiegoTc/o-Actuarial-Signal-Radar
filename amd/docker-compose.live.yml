@@ -1,0 +1,5 @@
+# Optional, local client only. Docker Desktop: enable host networking (4.34+) first.
+# Linux Engine: native host networking. No GPU flags and no port publication.
+services:
+  app:
+    network_mode: host

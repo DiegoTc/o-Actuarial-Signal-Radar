@@ -1,0 +1,446 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:actuarial-signal-radar:investigation_signal:v1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "investigation-signal-v1"
+    },
+    "signal_id": {
+      "type": "string",
+      "pattern": "^(market|institution_[0-9]{4})_(claims|premiums|ratio)_[0-9]{4}_[0-9]{2}$"
+    },
+    "report_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "availability_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "observed_value": {
+      "type": "number"
+    },
+    "expected_value": {
+      "type": "number"
+    },
+    "residual": {
+      "type": "number"
+    },
+    "relative_residual": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "raw_signal_level": {
+      "enum": [
+        "NORMAL",
+        "WATCH",
+        "ALERT"
+      ]
+    },
+    "adjusted_signal_level": {
+      "enum": [
+        "NORMAL",
+        "WATCH",
+        "ALERT"
+      ]
+    },
+    "materiality_level": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "case_classification": {
+      "enum": [
+        "FLAGSHIP",
+        "SUPPORTING",
+        "RESEARCH_ONLY",
+        "REJECTED_FOR_DEMO"
+      ]
+    },
+    "analysis_level": {
+      "enum": [
+        "market",
+        "institution"
+      ]
+    },
+    "metric": {
+      "enum": [
+        "monthly_claims",
+        "monthly_premiums",
+        "claims_to_premiums_ratio"
+      ]
+    },
+    "institution_code": {
+      "type": "string"
+    },
+    "institution_name": {
+      "type": "string"
+    },
+    "resource": {
+      "type": "string",
+      "minLength": 1
+    },
+    "detector_reference": {
+      "const": "residual_robust_z_12_months"
+    },
+    "robust_z_score": {
+      "type": "number"
+    },
+    "standard_z_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cusum_state": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "enum": [
+            "NORMAL",
+            "WATCH",
+            "ALERT",
+            null
+          ]
+        },
+        "score": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "positive": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "negative": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "level",
+        "score",
+        "positive",
+        "negative"
+      ],
+      "additionalProperties": false
+    },
+    "persistence_context": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "const": "DECISION_TIME_ONLY"
+        },
+        "backward_robust_run": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "backward_cusum_run": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "periods": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "report_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "availability_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "relative_month": {
+                "type": "integer",
+                "minimum": -3,
+                "maximum": 0
+              },
+              "residual": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "adjusted_signal_level": {
+                "enum": [
+                  "NORMAL",
+                  "WATCH",
+                  "ALERT",
+                  null
+                ]
+              },
+              "robust_z_score": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "cusum_level": {
+                "enum": [
+                  "NORMAL",
+                  "WATCH",
+                  "ALERT",
+                  null
+                ]
+              },
+              "cusum_positive": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "cusum_negative": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "context_status": {
+                "type": "string",
+                "minLength": 1
+              },
+              "known_by_signal_date": {
+                "const": true
+              }
+            },
+            "required": [
+              "report_date",
+              "availability_date",
+              "relative_month",
+              "residual",
+              "adjusted_signal_level",
+              "robust_z_score",
+              "cusum_level",
+              "cusum_positive",
+              "cusum_negative",
+              "context_status",
+              "known_by_signal_date"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "scope",
+        "backward_robust_run",
+        "backward_cusum_run",
+        "periods"
+      ],
+      "additionalProperties": false
+    },
+    "contributing_institutions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "minimum": 0
+      }
+    },
+    "quality_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "composition_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "data_quality_risk": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "quality_context": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "cohort_sensitivity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "negative_adjustment_sensitivity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trend_window_sensitivity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sensitivity_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scenario": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "adjusted_signal_level": {
+            "enum": [
+              "NORMAL",
+              "WATCH",
+              "ALERT",
+              null
+            ]
+          },
+          "robust_z_score": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "residual": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "scenario",
+          "status",
+          "adjusted_signal_level",
+          "robust_z_score",
+          "residual"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "case_study_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 18
+    },
+    "case_study_score_purpose": {
+      "const": "DEMO_SUITABILITY_NOT_ANOMALY_SCORE"
+    },
+    "source_report_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "methodology_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "replay_mode": {
+      "const": "LAGGED_RETROSPECTIVE_BACKTEST"
+    },
+    "strict_point_in_time_status": {
+      "const": "NOT_VALIDATED"
+    },
+    "snapshot_evaluation_cutoff": {
+      "type": "string",
+      "format": "date"
+    },
+    "investigation_mode": {
+      "const": "RETROSPECTIVE_CASE_REVIEW"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "signal_id",
+    "report_date",
+    "availability_date",
+    "observed_value",
+    "expected_value",
+    "residual",
+    "relative_residual",
+    "raw_signal_level",
+    "adjusted_signal_level",
+    "materiality_level",
+    "case_classification",
+    "analysis_level",
+    "metric",
+    "institution_code",
+    "institution_name",
+    "resource",
+    "detector_reference",
+    "robust_z_score",
+    "standard_z_score",
+    "cusum_state",
+    "persistence_context",
+    "contributing_institutions",
+    "quality_flags",
+    "composition_flags",
+    "data_quality_risk",
+    "quality_context",
+    "cohort_sensitivity",
+    "negative_adjustment_sensitivity",
+    "trend_window_sensitivity",
+    "sensitivity_results",
+    "case_study_score",
+    "case_study_score_purpose",
+    "source_report_paths",
+    "sources",
+    "methodology_version",
+    "replay_mode",
+    "strict_point_in_time_status",
+    "snapshot_evaluation_cutoff",
+    "investigation_mode",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

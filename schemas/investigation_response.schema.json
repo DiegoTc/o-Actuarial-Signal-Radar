@@ -1,0 +1,388 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:actuarial-signal-radar:investigation_response:v1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "investigation-response-v1"
+    },
+    "status": {
+      "enum": [
+        "mock",
+        "completed"
+      ]
+    },
+    "signal_id": {
+      "type": "string",
+      "pattern": "^(market|institution_[0-9]{4})_(claims|premiums|ratio)_[0-9]{4}_[0-9]{2}$"
+    },
+    "language": {
+      "enum": [
+        "en",
+        "es"
+      ]
+    },
+    "signal_snapshot": {
+      "type": "object",
+      "properties": {
+        "signal_id": {
+          "type": "string",
+          "pattern": "^(market|institution_[0-9]{4})_(claims|premiums|ratio)_[0-9]{4}_[0-9]{2}$"
+        },
+        "report_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "availability_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "observed_value": {
+          "type": "number"
+        },
+        "expected_value": {
+          "type": "number"
+        },
+        "residual": {
+          "type": "number"
+        },
+        "relative_residual": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_signal_level": {
+          "enum": [
+            "NORMAL",
+            "WATCH",
+            "ALERT"
+          ]
+        },
+        "adjusted_signal_level": {
+          "enum": [
+            "NORMAL",
+            "WATCH",
+            "ALERT"
+          ]
+        },
+        "materiality_level": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+          ]
+        }
+      },
+      "required": [
+        "signal_id",
+        "report_date",
+        "availability_date",
+        "observed_value",
+        "expected_value",
+        "residual",
+        "relative_residual",
+        "raw_signal_level",
+        "adjusted_signal_level",
+        "materiality_level"
+      ],
+      "additionalProperties": false
+    },
+    "executive_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "what_changed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "enum": [
+              "FACT",
+              "OBSERVATION",
+              "UNRESOLVED"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "status",
+          "text",
+          "evidence_refs"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "FACT",
+                    "OBSERVATION"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "evidence_refs": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "statistical_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "enum": [
+              "FACT",
+              "OBSERVATION",
+              "UNRESOLVED"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "status",
+          "text",
+          "evidence_refs"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "FACT",
+                    "OBSERVATION"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "evidence_refs": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "economic_materiality": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "Lempiras",
+            "ratio"
+          ]
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "level",
+        "unit",
+        "explanation",
+        "evidence_refs"
+      ],
+      "additionalProperties": false
+    },
+    "persistence_assessment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data_quality_considerations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "enum": [
+              "FACT",
+              "OBSERVATION",
+              "UNRESOLVED"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "status",
+          "text",
+          "evidence_refs"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "FACT",
+                    "OBSERVATION"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "evidence_refs": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "possible_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "hypothesis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "HYPOTHESIS"
+          },
+          "supporting_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "missing_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "confidence": {
+            "enum": [
+              "LOW",
+              "MEDIUM"
+            ]
+          }
+        },
+        "required": [
+          "hypothesis",
+          "status",
+          "supporting_evidence",
+          "missing_evidence",
+          "confidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "investigation_questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "recommended_next_checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "human_review_required": {
+      "const": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "signal_id",
+    "language",
+    "signal_snapshot",
+    "executive_summary",
+    "what_changed",
+    "statistical_evidence",
+    "economic_materiality",
+    "persistence_assessment",
+    "data_quality_considerations",
+    "possible_hypotheses",
+    "investigation_questions",
+    "recommended_next_checks",
+    "limitations",
+    "human_review_required"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,149 @@
+{
+  "checked_on": "2026-10-16",
+  "status": "VERIFIED",
+  "scope": "AMD_TOKEN_FACTORY_INVESTIGATION",
+  "workspace_name": "Actuarial Signal Radar",
+  "workspace_id": "4eaccc3d-45ac-4f36-883f-8dbd307c471c",
+  "api_base_url": "https://api.evolus.ai/api/v1",
+  "plan": "Developer Event",
+  "expires_on": "2026-11-15",
+  "credits_at_activation": 50000,
+  "library": {
+    "id": "d2aca892-20c9-f111-bf5b-000d3aae6dc8",
+    "name": "ActuarialSignalRadarMemory1",
+    "documents": [
+      {
+        "id": "knowledge:cnbs_semantics",
+        "document_id": "1a71d282-d54a-40b3-a61a-1ef75935d6fd",
+        "title": "cnbs_semantics.md",
+        "excerpt_sha256": "374cfc2d089fa33b66a66c335afad73b3d23139d2e07fe4d6a7a67148762be00",
+        "ingestion_status": 2,
+        "ingestion_error": null,
+        "content_verified": true,
+        "chunk_count": 2
+      },
+      {
+        "id": "knowledge:replay",
+        "document_id": "4d4ce8cb-eb3f-435f-a56a-a31e5e211b6a",
+        "title": "replay.md",
+        "excerpt_sha256": "d777b94850fb29ccdb660984f6ddfafd13ab49e9f0c4c2cf5257a880d328ee92",
+        "ingestion_status": 2,
+        "ingestion_error": null,
+        "content_verified": true,
+        "chunk_count": 3
+      },
+      {
+        "id": "knowledge:statistical",
+        "document_id": "d3beb26a-48a1-4a45-8dd0-409445c800a8",
+        "title": "statistical.md",
+        "excerpt_sha256": "ba45a3a8b3d11065c4f2affdffc4766532ecab88080f9df3ed566892c9b1f0dd",
+        "ingestion_status": 2,
+        "ingestion_error": null,
+        "content_verified": true,
+        "chunk_count": 2
+      },
+      {
+        "id": "knowledge:expected_behavior",
+        "document_id": "4838d01d-c52f-4f00-89e4-37598e7fe86d",
+        "title": "expected_behavior.md",
+        "excerpt_sha256": "ab8012ded85188d2f134e970fa35af7e1f0598afec433baa931eb4a10452f70f",
+        "ingestion_status": 2,
+        "ingestion_error": null,
+        "content_verified": true,
+        "chunk_count": 3
+      },
+      {
+        "id": "knowledge:case_selection",
+        "document_id": "4ef10a6d-e617-4638-8539-49e322e14ef5",
+        "title": "case_selection.md",
+        "excerpt_sha256": "614e90b6ec953436ca2098cb536fe2dadac4f0c0ddf29ec8124411bf525a1bf8",
+        "ingestion_status": 2,
+        "ingestion_error": null,
+        "content_verified": true,
+        "chunk_count": 2
+      },
+      {
+        "id": "knowledge:market_claims_2025_09",
+        "document_id": "16584e0b-60ff-459d-a55c-dcabcddfb32f",
+        "title": "market_claims_2025_09.md",
+        "excerpt_sha256": "7cf5e57a65a77239d9e6fe7f3d6883ab85cebf01db8ecf56b21c16d91af9ddd5",
+        "ingestion_status": 2,
+        "ingestion_error": null,
+        "content_verified": true,
+        "chunk_count": 2
+      },
+      {
+        "id": "knowledge:market_ratio_2025_03",
+        "document_id": "f1f3e34b-1ec6-4d15-bece-f3ac9b993162",
+        "title": "market_ratio_2025_03.md",
+        "excerpt_sha256": "e992f7867df6db3f97107882c90f4bf3bef4633b347a35c5e4937d5956a446a3",
+        "ingestion_status": 2,
+        "ingestion_error": null,
+        "content_verified": true,
+        "chunk_count": 2
+      }
+    ]
+  },
+  "workflow": {
+    "id": "573811ae-38c3-4b26-a61c-174a7ab3b07d",
+    "name": "Actuarial Signal Investigation",
+    "version": "evolus-amd-token-factory-v1",
+    "mode": "AMD_TOKEN_FACTORY_INVESTIGATION",
+    "active": true,
+    "model_gate": "COMPLETED",
+    "model_step": "LlmCall",
+    "model_key": "own/deepseek-v4-flash"
+  },
+  "key_rotation": {
+    "exposed_default_revoked": true,
+    "replacement_stored_only_in_ignored_env": true,
+    "temporary_personal_discovery_key_revoked": true
+  },
+  "amd_status": "VERIFIED",
+  "end_to_end_amd_verified": true,
+  "native_agent_retrieval_verified": false,
+  "tests": {
+    "market_claims_2025_09": {
+      "execution_id": "40a0b4ae-b9c9-f111-bf5b-6045bd9ce552",
+      "validation_status": "PASS",
+      "human_review_required": true,
+      "generated_at": "2026-10-16T23:33:36.264898+00:00",
+      "saved_package_file_sha256": "9308783475f93b4fcd56a6350b4e92554480625f06acdfa5ad32f1360ad3e4b4",
+      "canonical_package_sha256": "b38b7575861c83427a6466fbb253723e08d1ff7cb43d92827f8003a0b4d02f8b",
+      "knowledge_documents": 6,
+      "report": "market_claims_2025_09.es.json",
+      "model_called": true,
+      "model_provider": "amd_token_factory",
+      "model": "DeepSeek-V4-Flash"
+    },
+    "market_ratio_2025_03": {
+      "execution_id": "e3414a08-bac9-f111-bf5b-6045bd9ce552",
+      "validation_status": "PASS",
+      "human_review_required": true,
+      "generated_at": "2026-10-16T23:33:46.557523+00:00",
+      "saved_package_file_sha256": "db6f9542f0068dde932d9a53b22ea0c14749f24d173a4c681d8827669dd49f69",
+      "canonical_package_sha256": "8cc709ff3558d4331e783f76109ac98e77cd980b70cf6e996bd3589dda4bebd4",
+      "knowledge_documents": 6,
+      "report": "market_ratio_2025_03.es.json",
+      "model_called": true,
+      "model_provider": "amd_token_factory",
+      "model": "DeepSeek-V4-Flash"
+    }
+  },
+  "historical_pre_amd_tests": {
+    "market_claims_2025_09": {
+      "execution_id": "e3693f89-75c9-f111-bf5b-6045bd9ce552",
+      "status": "PASS_PRE_AMD_HANDOFF_ONLY",
+      "human_review_required": true,
+      "knowledge_documents": 6,
+      "model_called": false
+    },
+    "market_ratio_2025_03": {
+      "execution_id": "ff87fda4-75c9-f111-bf5b-6045bd9ce552",
+      "status": "PASS_PRE_AMD_HANDOFF_ONLY",
+      "human_review_required": true,
+      "knowledge_documents": 6,
+      "model_called": false
+    }
+  }
+}

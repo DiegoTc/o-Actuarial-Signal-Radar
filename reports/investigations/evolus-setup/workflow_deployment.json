@@ -1,0 +1,42 @@
+{
+  "workflow_id": "573811ae-38c3-4b26-a61c-174a7ab3b07d",
+  "status": "ACTIVE_PRE_AMD_ONLY",
+  "version": "evolus-pre-amd-v3",
+  "steps": [
+    {
+      "id": "f7f0a40b-e039-40ac-be9f-e45d28d0b88c",
+      "name": "Validate signal schema",
+      "step_type": 19
+    },
+    {
+      "id": "5e80b285-d49d-4c84-8b3b-44da5a0accfb",
+      "name": "Check curated library context",
+      "step_type": 19
+    },
+    {
+      "id": "707d8e64-d403-467c-aa21-a7e1f96f2c1a",
+      "name": "AMD model gate — NOT AMD VERIFIED",
+      "step_type": 19
+    },
+    {
+      "id": "edca642a-f68c-491f-a660-bcd710e65dfc",
+      "name": "Build pending structured response",
+      "step_type": 19
+    },
+    {
+      "id": "df28d1ce-f5a6-4cb7-9aa1-8ce1dc8dd7cb",
+      "name": "Validate immutable output",
+      "step_type": 19
+    },
+    {
+      "id": "9dd067cd-88cf-4f49-a590-9468bbf7ecb8",
+      "name": "Require human actuarial review",
+      "step_type": 19
+    },
+    {
+      "id": "1b959155-f19e-4bfc-ad2f-2afa4c3f4f81",
+      "name": "Return HUMAN_REVIEW_REQUIRED",
+      "step_type": 14
+    }
+  ]
+}

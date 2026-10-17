@@ -1,0 +1,8 @@
+[project]
+name = "actuarial-python-local-probe"
+version = "0.0.1"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = ["workers-py", "workers-runtime-sdk"]

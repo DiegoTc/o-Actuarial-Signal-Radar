@@ -1,5 +1,7 @@
 # Automobile / Nacional semantics validation
 
+> Phase 2 implementation update: statistical baselines and the lagged retrospective backtest are now implemented. See [Phase 2 results](../statistical-baseline/baseline_summary.md) and [statistical methodology](../../docs/statistical-baseline-methodology.md). Earlier phase decisions and measurements below are retained as historical records. Strict point-in-time validity remains NOT VALIDATED.
+
 Scope: exact parent `Seguros Generales`, Ramo `Vehículos Automotores`, code `1` / `Nacional`, separate Primas and Siniestros.
 
 Temporal confidence: **STRONGLY SUPPORTED**; evidence: [cnbs_semantics.md](cnbs_semantics.md).
@@ -9,6 +11,12 @@ Derived values are reported accounting increments, not accident-month losses, ca
 January equals reported January; February–December require the exact prior calendar month in the same resource/institution/parent/line/currency key. No bridging across codes, line labels or currencies.
 
 **Automobile is not yet ready for point-in-time historical replay.** Negative increments and name/code transitions need review; snapshot revision history and actual availability dates are incomplete.
+
+## Current evaluation decision — 2026-10-14
+
+**RETROSPECTIVE_BACKTEST_READY**; current mode **LAGGED_RETROSPECTIVE_BACKTEST**, assumption **CONSERVATIVE_TWO_MONTHS**; **STRICT_POINT_IN_TIME_NOT_VALIDATED**. Phase 2 may proceed using the current snapshot under the [historical replay methodology](../../docs/historical-replay-methodology.md). Exact historical release dates and vintages remain a non-blocking Phase 1.6 research track. The measured results below are unchanged; blocked rows, negatives and name/code transitions still require disclosed treatment. No backtest or detector is implemented. See [replay readiness](replay_readiness.md).
+
+This report's generated measurements and October 3 point-in-time caution remain evidence records. Regenerating it with the existing derivation CLI can replace this editorial status note; the dedicated methodology/readiness documents govern the current evaluation decision.
 
 ## primas
 

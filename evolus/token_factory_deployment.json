@@ -1,0 +1,9 @@
+{
+  "workflow_id": "573811ae-38c3-4b26-a61c-174a7ab3b07d",
+  "agent_id": "42601a7a-93ac-4631-a7bf-c97c3ebdb478",
+  "model_key": "own/DeepSeek-V4-Flash",
+  "model_id": "DeepSeek-V4-Flash",
+  "library_id": "d2aca892-20c9-f111-bf5b-000d3aae6dc8",
+  "version": "evolus-amd-token-factory-v1",
+  "model_step": "LlmCall"
+}

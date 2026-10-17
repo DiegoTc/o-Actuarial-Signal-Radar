@@ -1,0 +1,40 @@
+{
+  "status": "VERIFIED",
+  "provider": "amd_token_factory",
+  "model": "DeepSeek-V4-Flash",
+  "base_url": "https://developer.amd.com.cn/radeon/api/v1",
+  "endpoint_type": "OpenAI-compatible Chat Completions",
+  "evolus_workflow_id": "573811ae-38c3-4b26-a61c-174a7ab3b07d",
+  "library_id": "d2aca892-20c9-f111-bf5b-000d3aae6dc8",
+  "model_step": "LlmCall",
+  "knowledge_retrieval": "INDEXED_DOCUMENT_DOWNLOAD_SHA256_VERIFIED",
+  "native_semantic_retrieval_verified": false,
+  "self_hosted_rocm_vllm_verified": false,
+  "verified_at": "2026-10-16T23:42:01.505561+00:00",
+  "cases": {
+    "market_claims_2025_09": {
+      "execution_id": "40a0b4ae-b9c9-f111-bf5b-6045bd9ce552",
+      "validation_status": "PASS",
+      "human_review_required": true,
+      "generated_at": "2026-10-16T23:33:36.264898+00:00",
+      "saved_package_file_sha256": "9308783475f93b4fcd56a6350b4e92554480625f06acdfa5ad32f1360ad3e4b4",
+      "canonical_package_sha256": "b38b7575861c83427a6466fbb253723e08d1ff7cb43d92827f8003a0b4d02f8b",
+      "knowledge_documents": 6,
+      "report": "market_claims_2025_09.es.json"
+    },
+    "market_ratio_2025_03": {
+      "execution_id": "e3414a08-bac9-f111-bf5b-6045bd9ce552",
+      "validation_status": "PASS",
+      "human_review_required": true,
+      "generated_at": "2026-10-16T23:33:46.557523+00:00",
+      "saved_package_file_sha256": "db6f9542f0068dde932d9a53b22ea0c14749f24d173a4c681d8827669dd49f69",
+      "canonical_package_sha256": "8cc709ff3558d4331e783f76109ac98e77cd980b70cf6e996bd3589dda4bebd4",
+      "knowledge_documents": 6,
+      "report": "market_ratio_2025_03.es.json"
+    }
+  },
+  "preservation": {
+    "protected_files": 140,
+    "changed_files": []
+  }
+}

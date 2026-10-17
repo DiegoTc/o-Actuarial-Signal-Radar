@@ -1,5 +1,9 @@
 # Phase 1 completion and validation record
 
+> Phase 2 implementation update: statistical baselines and the lagged retrospective backtest are now implemented. See [Phase 2 results](../statistical-baseline/baseline_summary.md) and [statistical methodology](../../docs/statistical-baseline-methodology.md). Earlier phase decisions and measurements below are retained as historical records. Strict point-in-time validity remains NOT VALIDATED.
+
+> Historical Phase 1 record: the findings, command results and phase restrictions below describe the original validation scope. Phase 1.5 subsequently supported restricted Automobile/Nacional monthly accounting increments. As of 2026-10-14, Phase 2 may proceed with a **lagged retrospective backtest using the conservative two-month reporting lag**; Phase 1.6 is partial and non-blocking. Strict point-in-time replay is not validated. See the [current methodology](../../docs/historical-replay-methodology.md) and [replay readiness](replay_readiness.md). Original evidence and measurements are preserved.
+
 Validated 2026-10-03 in the existing `o-Actuarial-Signal-Radar` repository. The repository had no tracked work or commits; existing Git configuration and remote were preserved. All listed project files are newly created. No Phase 2 work was started.
 
 ## 1. Files created/modified

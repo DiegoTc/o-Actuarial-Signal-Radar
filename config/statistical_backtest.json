@@ -1,0 +1,13 @@
+{
+  "policy_version": "statistical-baseline-v1",
+  "evaluation_end": "2026-10-03",
+  "rolling_windows": [6, 12, 24],
+  "minimum_history": 6,
+  "require_full_window": true,
+  "standard_z": {"watch": 2.0, "alert": 3.0},
+  "robust_z": {"watch": 2.5, "alert": 3.5, "mad_constant": 0.6745},
+  "ewma": {"spans": [6, 12], "scale_window": 12, "watch": 2.0, "alert": 3.0},
+  "cusum": {"scale_window": 12, "drift": 0.5, "watch": 3.0, "alert": 5.0, "reset_after_alert": true},
+  "persistence_observations": 3,
+  "negative_value_policy": "retain"
+}

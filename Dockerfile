@@ -6,6 +6,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY scripts/ scripts/
 COPY actuarial-engine/ actuarial-engine/
 COPY config/ config/
+COPY schemas/ schemas/
+COPY amd/ amd/
+COPY docs/ docs/
+COPY evolus/ evolus/
 COPY tests/ tests/
 COPY pytest.ini .
 CMD ["python", "scripts/profile_cnbs.py", "--help"]

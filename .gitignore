@@ -6,3 +6,28 @@ data/raw/
 data/processed/
 .DS_Store
 .idea/
+
+# Runtime AMD evidence is local; only its README is versioned.
+artifacts/amd/*
+!artifacts/amd/README.md
+
+# Private local operational notes; do not commit or push.
+.local/
+
+# Full runtime model traces and direct diagnostic attempts stay local.
+reports/investigations/token-factory/*.audit.json
+reports/investigations/token-factory/direct/
+
+# Dashboard build and browser test artifacts.
+frontend/node_modules/
+frontend/.next/
+frontend/test-results/
+frontend/playwright-report/
+frontend/*.tsbuildinfo
+
+# Cloudflare account caches and dependency trees remain local.
+.wrangler/
+**/node_modules/
+
+# Raw investigation audit traces are operational evidence, never public source.
+reports/investigations/**/*.audit.json

@@ -6,3 +6,7 @@ __pycache__
 data
 reports
 *.egg-info
+artifacts
+
+.local
+frontend
