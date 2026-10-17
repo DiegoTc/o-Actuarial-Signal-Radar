@@ -31,3 +31,13 @@ frontend/*.tsbuildinfo
 
 # Raw investigation audit traces are operational evidence, never public source.
 reports/investigations/**/*.audit.json
+
+# Environment variants, Worker development secrets and build caches.
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.next/
+*.tsbuildinfo
+playwright-report/
+test-results/
