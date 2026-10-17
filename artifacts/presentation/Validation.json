@@ -1,0 +1,17 @@
+{
+  "slides": 8,
+  "aspect_ratio": "16:9",
+  "speaker_notes_on_all_slides": true,
+  "narration_words": 448,
+  "out_of_bounds_shapes": 0,
+  "source_values_match_saved_packages": true,
+  "secret_scan": "PASS",
+  "pdf_links": [
+    "https://actuarial-signal-radar.diegoturciostc.workers.dev",
+    "https://actuarial-signal-radar.diegoturciostc.workers.dev",
+    "https://github.com/DiegoTc/o-Actuarial-Signal-Radar",
+    "https://github.com/DiegoTc/o-Actuarial-Signal-Radar"
+  ],
+  "images": "real live captures + explicitly labeled recorded real public execution",
+  "no_new_inference": true
+}
