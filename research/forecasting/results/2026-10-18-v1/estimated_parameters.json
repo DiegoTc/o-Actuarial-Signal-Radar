@@ -1,0 +1,1672 @@
+[
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 34848521.679236524,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2021-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2021-07-31",
+    "information_set_date": "2021-10-01",
+    "training_months": 43,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      70117130.74000001,
+      70117130.74000001,
+      70117130.74000001,
+      70117130.74000001,
+      70117130.74000001,
+      70117130.74000001,
+      70117130.74000001
+    ],
+    "seasonal_effects_HNL": {
+      "08": -1654206.0375000238,
+      "09": 4109627.480000004,
+      "10": -22233345.029999986,
+      "11": 25645514.75000003,
+      "12": -16935133.680000037,
+      "01": 7736075.440000005,
+      "02": 1559266.9100000113
+    },
+    "seasonal_counts": {
+      "08": 2,
+      "09": 2,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "01": 3,
+      "02": 3
+    },
+    "calibration_residuals": 10,
+    "interval_calibration_warning": true,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2021-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2021-07-31",
+    "information_set_date": "2021-10-01",
+    "training_months": 43,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 1.4901161193847656e-08,
+      "smoothing_trend": 2.584713443127818e-10,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.8687730105356675,
+      "initial_level": 92.80776184414317,
+      "initial_trend": -2.578780105020727,
+      "initial_seasons": [
+        4.888762629335508,
+        -2.5444098353960785,
+        -6.70315748801734,
+        -17.24328712202839,
+        -8.815270342540662,
+        -1.6343201225299195,
+        -0.13471527716820275,
+        -0.5067335355338809,
+        -6.988581759566579,
+        -17.560857184528444,
+        63.467722547701094,
+        5.45586511347039
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 22152.771789460545,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2021-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2021-07-31",
+    "information_set_date": "2021-10-01",
+    "training_months": 43,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.13595199377262251,
+      "ma.S.L12": 0.06895704151226935,
+      "sigma2": 1051.395042076311
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 299.9491081106858,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2021-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2021-07-31",
+    "information_set_date": "2021-10-01",
+    "training_months": 43,
+    "warnings": [
+      "Too few observations to estimate starting parameters for seasonal ARMA. All parameters except for variances will be set to zeros."
+    ],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 37149914.79157409,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2022-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2022-07-31",
+    "information_set_date": "2022-10-01",
+    "training_months": 55,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      86089505.51499999,
+      86089505.51499999,
+      86089505.51499999,
+      86089505.51499999,
+      86089505.51499999,
+      86089505.51499999,
+      86089505.51499999
+    ],
+    "seasonal_effects_HNL": {
+      "08": 1885860.0849999934,
+      "09": 5765657.820000008,
+      "10": -8280180.517499983,
+      "11": 18953362.6425,
+      "12": 4733536.382499978,
+      "01": 8264249.062499996,
+      "02": 1309451.5799999982
+    },
+    "seasonal_counts": {
+      "08": 3,
+      "09": 3,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "01": 4,
+      "02": 4
+    },
+    "calibration_residuals": 22,
+    "interval_calibration_warning": true,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2022-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2022-07-31",
+    "information_set_date": "2022-10-01",
+    "training_months": 55,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 1.4901161193847656e-08,
+      "smoothing_trend": 1.4884836007812937e-08,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.8201287460794907,
+      "initial_level": 91.20228280773239,
+      "initial_trend": -2.6724315861558305,
+      "initial_seasons": [
+        4.193826845102376,
+        -2.930186436915784,
+        -5.359696261717193,
+        -13.255746855714104,
+        -7.042944678283346,
+        -1.850482594392534,
+        1.26182627438135,
+        -0.9995716401580282,
+        -6.863001061911771,
+        -14.183487923749746,
+        48.50489645389659,
+        8.599754845814127
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 26489.26917000795,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2022-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2022-07-31",
+    "information_set_date": "2022-10-01",
+    "training_months": 55,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.5160537111481902,
+      "ma.S.L12": -0.9987659213488449,
+      "sigma2": 656.475073424252
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 415.87019663844967,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2022-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2022-07-31",
+    "information_set_date": "2022-10-01",
+    "training_months": 55,
+    "warnings": [
+      "Non-invertible starting seasonal moving average Using zeros as starting parameters."
+    ],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 33734030.691556744,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2023-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2023-07-31",
+    "information_set_date": "2023-10-01",
+    "training_months": 67,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      100524973.41,
+      100524973.41,
+      100524973.41,
+      100524973.41,
+      100524973.41,
+      100524973.41,
+      100524973.41
+    ],
+    "seasonal_effects_HNL": {
+      "08": 6934803.652499996,
+      "09": 5736437.039999992,
+      "10": 5672983.99500002,
+      "11": 12261210.534999967,
+      "12": 19217815.04500003,
+      "01": 8792422.684999987,
+      "02": 1059636.249999985
+    },
+    "seasonal_counts": {
+      "08": 4,
+      "09": 4,
+      "10": 5,
+      "11": 5,
+      "12": 5,
+      "01": 5,
+      "02": 5
+    },
+    "calibration_residuals": 34,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2023-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2023-07-31",
+    "information_set_date": "2023-10-01",
+    "training_months": 67,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.3745313307823044,
+      "smoothing_trend": 0.0,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.9154277575213341,
+      "initial_level": 87.14476037500498,
+      "initial_trend": -0.884952835584524,
+      "initial_seasons": [
+        3.649058683597774,
+        -3.9055685383627834,
+        -5.222123117050788,
+        -12.946079079332716,
+        -6.942915023843295,
+        -1.7714052258427349,
+        -0.06933310975626028,
+        1.416311922221766,
+        -5.401609279898646,
+        -10.932653456522772,
+        39.26607861230873,
+        8.880516451811951
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 30694.7346774541,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2023-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2023-07-31",
+    "information_set_date": "2023-10-01",
+    "training_months": 67,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.5834567636427626,
+      "ma.S.L12": -0.9974450193899235,
+      "sigma2": 569.1132900007315
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 522.513031584229,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2023-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2023-07-31",
+    "information_set_date": "2023-10-01",
+    "training_months": 67,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 31881972.169267178,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2024-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2024-07-31",
+    "information_set_date": "2024-10-01",
+    "training_months": 79,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      121112408.18,
+      121112408.18,
+      121112408.18,
+      121112408.18,
+      121112408.18,
+      121112408.18,
+      121112408.18
+    ],
+    "seasonal_effects_HNL": {
+      "08": 11983747.219999999,
+      "09": 5765657.820000008,
+      "10": 6401783.387500018,
+      "11": 12177474.799999982,
+      "12": 10816936.50500001,
+      "01": 8364096.069999993,
+      "02": 1309451.5799999982
+    },
+    "seasonal_counts": {
+      "08": 5,
+      "09": 5,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "01": 6,
+      "02": 6
+    },
+    "calibration_residuals": 46,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2024-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2024-07-31",
+    "information_set_date": "2024-10-01",
+    "training_months": 79,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.35119955227868976,
+      "smoothing_trend": 0.0,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.995,
+      "initial_level": 83.58232094671888,
+      "initial_trend": 0.5871541216179397,
+      "initial_seasons": [
+        3.2743587452940845,
+        -2.744166551041098,
+        -6.63520442036572,
+        -10.567369287153616,
+        -6.9636309618563486,
+        -0.879193394215913,
+        -1.318129873226153,
+        2.9509262220654033,
+        -4.149123883824834,
+        -9.453240826710676,
+        32.801407060666214,
+        6.148228754485513
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 33500.9916744281,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2024-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2024-07-31",
+    "information_set_date": "2024-10-01",
+    "training_months": 79,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.6165081790123478,
+      "ma.S.L12": -0.9967985535071661,
+      "sigma2": 508.5957423383631
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 627.2915914478783,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2024-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2024-07-31",
+    "information_set_date": "2024-10-01",
+    "training_months": 79,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 30229692.26474656,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2025-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2025-07-31",
+    "information_set_date": "2025-10-01",
+    "training_months": 91,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      135060319.49,
+      135060319.49,
+      135060319.49,
+      135060319.49,
+      135060319.49,
+      135060319.49,
+      135060319.49
+    ],
+    "seasonal_effects_HNL": {
+      "08": 9947574.999999993,
+      "09": 5736437.039999992,
+      "10": 6401783.387500018,
+      "11": 17680132.30749999,
+      "12": 14270375.957500018,
+      "01": 8364096.069999993,
+      "02": 3839932.315000009
+    },
+    "seasonal_counts": {
+      "08": 6,
+      "09": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "01": 6,
+      "02": 6
+    },
+    "calibration_residuals": 58,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2025-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2025-07-31",
+    "information_set_date": "2025-10-01",
+    "training_months": 91,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.38153840057133376,
+      "smoothing_trend": 0.0,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.9123754043102233,
+      "initial_level": 86.2623130439171,
+      "initial_trend": -0.7918158696026651,
+      "initial_seasons": [
+        2.429998481461541,
+        -0.7222298863700056,
+        -5.469029436265849,
+        -10.065568007890972,
+        -6.620753517422543,
+        1.6560202128621975,
+        -1.6677589492595242,
+        2.7898970870473176,
+        -4.245371541601482,
+        -8.550804117874286,
+        30.21805668240156,
+        5.37721177734572
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 35084.5257466688,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2025-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2025-07-31",
+    "information_set_date": "2025-10-01",
+    "training_months": 91,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.6304751964583603,
+      "ma.S.L12": -0.9971991458446671,
+      "sigma2": 447.3315893643485
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 727.8553186859123,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2025-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2025-07-31",
+    "information_set_date": "2025-10-01",
+    "training_months": 91,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 34451322.63439321,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2021-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2021-04-30",
+    "information_set_date": "2021-07-31",
+    "training_months": 40,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      67957585.845,
+      67957585.845,
+      67957585.845,
+      67957585.845,
+      67957585.845,
+      67957585.845,
+      67957585.845,
+      67957585.845,
+      67957585.845,
+      67957585.845
+    ],
+    "seasonal_effects_HNL": {
+      "05": -21872242.485,
+      "06": -17804347.979999986,
+      "07": -10461398.582500018,
+      "08": -1654206.0375000238,
+      "09": 4109627.480000004,
+      "10": -22233345.029999986,
+      "11": 25645514.75000003,
+      "12": -16935133.680000037,
+      "01": 7736075.440000005,
+      "02": 1559266.9100000113
+    },
+    "seasonal_counts": {
+      "05": 2,
+      "06": 2,
+      "07": 2,
+      "08": 2,
+      "09": 2,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "01": 3,
+      "02": 3
+    },
+    "calibration_residuals": 7,
+    "interval_calibration_warning": true,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2021-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2021-04-30",
+    "information_set_date": "2021-07-31",
+    "training_months": 40,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 1.4901161193847656e-08,
+      "smoothing_trend": 2.835275442707897e-10,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.8810355427008011,
+      "initial_level": 92.4963702096434,
+      "initial_trend": -2.357546353615648,
+      "initial_seasons": [
+        5.261112869913477,
+        -2.12519136855614,
+        -6.4580695797775025,
+        -17.066755729119112,
+        -6.9997221325833685,
+        -7.5538385140591044,
+        0.2994255110671654,
+        -0.14823573357717887,
+        -6.58476996032972,
+        -17.09373695772605,
+        63.828744192582604,
+        6.011211888354757
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 21676.28516059678,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2021-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2021-04-30",
+    "information_set_date": "2021-07-31",
+    "training_months": 40,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": 0.04203569587689002,
+      "ma.S.L12": 0.08940000327004022,
+      "sigma2": 1124.545880751014
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 272.39934721603765,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2021-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2021-04-30",
+    "information_set_date": "2021-07-31",
+    "training_months": 40,
+    "warnings": [
+      "Too few observations to estimate starting parameters for seasonal ARMA. All parameters except for variances will be set to zeros."
+    ],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 38154017.61401,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2022-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2022-04-30",
+    "information_set_date": "2022-07-31",
+    "training_months": 52,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      83997571.125,
+      83997571.125,
+      83997571.125,
+      83997571.125,
+      83997571.125,
+      83997571.125,
+      83997571.125,
+      83997571.125,
+      83997571.125,
+      83997571.125
+    ],
+    "seasonal_effects_HNL": {
+      "05": -6272777.534999996,
+      "06": 4010029.0100000203,
+      "07": 5752945.494999975,
+      "08": 1885860.0849999934,
+      "09": 5765657.820000008,
+      "10": -8280180.517499983,
+      "11": 18953362.6425,
+      "12": 4733536.382499978,
+      "01": 8264249.062499996,
+      "02": 1309451.5799999982
+    },
+    "seasonal_counts": {
+      "05": 3,
+      "06": 3,
+      "07": 3,
+      "08": 3,
+      "09": 3,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "01": 4,
+      "02": 4
+    },
+    "calibration_residuals": 19,
+    "interval_calibration_warning": true,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2022-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2022-04-30",
+    "information_set_date": "2022-07-31",
+    "training_months": 52,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 1.4901161193847656e-08,
+      "smoothing_trend": 2.9212918085663033e-10,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.8422982570601024,
+      "initial_level": 91.22926672009004,
+      "initial_trend": -2.4881900540427537,
+      "initial_seasons": [
+        4.861590716219316,
+        -2.2646325477685223,
+        -4.631239555447536,
+        -12.502803404171285,
+        -10.122801844020607,
+        -3.0440477001089516,
+        -1.6640556426993802,
+        -0.19282403300800288,
+        -6.014763927986951,
+        -13.297571570107477,
+        49.42578741026192,
+        9.55068702766026
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 25848.746725479003,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2022-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2022-04-30",
+    "information_set_date": "2022-07-31",
+    "training_months": 52,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.5050071533732646,
+      "ma.S.L12": -0.9975844041989775,
+      "sigma2": 705.9968406588025
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 390.0052407642366,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2022-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2022-04-30",
+    "information_set_date": "2022-07-31",
+    "training_months": 52,
+    "warnings": [
+      "Non-invertible starting seasonal moving average Using zeros as starting parameters."
+    ],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 34251563.15395877,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2023-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2023-04-30",
+    "information_set_date": "2023-07-31",
+    "training_months": 64,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      97729662.22,
+      97729662.22,
+      97729662.22,
+      97729662.22,
+      97729662.22,
+      97729662.22,
+      97729662.22,
+      97729662.22,
+      97729662.22,
+      97729662.22
+    ],
+    "seasonal_effects_HNL": {
+      "05": -1611758.109999992,
+      "06": 1369284.042500019,
+      "07": 7698352.937499985,
+      "08": 6934803.652499996,
+      "09": 5736437.039999992,
+      "10": 5672983.99500002,
+      "11": 12261210.534999967,
+      "12": 19217815.04500003,
+      "01": 8792422.684999987,
+      "02": 1059636.249999985
+    },
+    "seasonal_counts": {
+      "05": 4,
+      "06": 4,
+      "07": 4,
+      "08": 4,
+      "09": 4,
+      "10": 5,
+      "11": 5,
+      "12": 5,
+      "01": 5,
+      "02": 5
+    },
+    "calibration_residuals": 31,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2023-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2023-04-30",
+    "information_set_date": "2023-07-31",
+    "training_months": 64,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.14645152979218698,
+      "smoothing_trend": 0.0,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.995,
+      "initial_level": 82.54396234601691,
+      "initial_trend": 0.23813177901192006,
+      "initial_seasons": [
+        4.4062759816984425,
+        -3.114329715663124,
+        -4.363124668556166,
+        -12.01923246402118,
+        -8.810540019134539,
+        -4.03600860275235,
+        -1.324790660468903,
+        0.500239725798692,
+        -6.133982579026139,
+        -11.470955540223894,
+        38.98461964125176,
+        8.800340929014578
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 30449.063770664703,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2023-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2023-04-30",
+    "information_set_date": "2023-07-31",
+    "training_months": 64,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.6080855131127952,
+      "ma.S.L12": -0.9962003557780725,
+      "sigma2": 600.2279498554886
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 497.11644429463365,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2023-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2023-04-30",
+    "information_set_date": "2023-07-31",
+    "training_months": 64,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 32442688.08563279,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2024-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2024-04-30",
+    "information_set_date": "2024-07-31",
+    "training_months": 76,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      118273313.43,
+      118273313.43,
+      118273313.43,
+      118273313.43,
+      118273313.43,
+      118273313.43,
+      118273313.43,
+      118273313.43,
+      118273313.43,
+      118273313.43
+    ],
+    "seasonal_effects_HNL": {
+      "05": 3049261.3150000125,
+      "06": 4010029.0100000203,
+      "07": 9643760.379999995,
+      "08": 11983747.219999999,
+      "09": 5765657.820000008,
+      "10": 6401783.387500018,
+      "11": 12177474.799999982,
+      "12": 10816936.50500001,
+      "01": 8364096.069999993,
+      "02": 1309451.5799999982
+    },
+    "seasonal_counts": {
+      "05": 5,
+      "06": 5,
+      "07": 5,
+      "08": 5,
+      "09": 5,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "01": 6,
+      "02": 6
+    },
+    "calibration_residuals": 43,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2024-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2024-04-30",
+    "information_set_date": "2024-07-31",
+    "training_months": 76,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.3431659217584777,
+      "smoothing_trend": 0.0,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.995,
+      "initial_level": 83.58659154318988,
+      "initial_trend": 0.5653543519189874,
+      "initial_seasons": [
+        3.3644956420971988,
+        -2.6355354969647875,
+        -6.50341491247162,
+        -10.401714860736636,
+        -7.091437735378656,
+        -2.156041892516796,
+        -0.6662584801589219,
+        2.965070912982613,
+        -4.12452580017276,
+        -9.402289801082743,
+        32.869471327189316,
+        6.241808353204019
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 33376.41113652397,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2024-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2024-04-30",
+    "information_set_date": "2024-07-31",
+    "training_months": 76,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.6149845024666725,
+      "ma.S.L12": -0.9957596975576011,
+      "sigma2": 531.74965999527
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 602.3347319345203,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2024-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2024-04-30",
+    "information_set_date": "2024-07-31",
+    "training_months": 76,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 30594406.29995392,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2025-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2025-04-30",
+    "information_set_date": "2025-07-31",
+    "training_months": 88,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001,
+      132921936.45500001
+    ],
+    "seasonal_effects_HNL": {
+      "05": 3079495.972500004,
+      "06": 9371734.197500005,
+      "07": 7698352.937499985,
+      "08": 9947574.999999993,
+      "09": 5736437.039999992,
+      "10": 6401783.387500018,
+      "11": 17680132.30749999,
+      "12": 14270375.957500018,
+      "01": 8364096.069999993,
+      "02": 3839932.315000009
+    },
+    "seasonal_counts": {
+      "05": 6,
+      "06": 6,
+      "07": 6,
+      "08": 6,
+      "09": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "01": 6,
+      "02": 6
+    },
+    "calibration_residuals": 55,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2025-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2025-04-30",
+    "information_set_date": "2025-07-31",
+    "training_months": 88,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.35401430110617893,
+      "smoothing_trend": 0.0,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.995,
+      "initial_level": 82.74302019157548,
+      "initial_trend": 0.7063203278271885,
+      "initial_seasons": [
+        2.597912928122303,
+        -0.6565645456202099,
+        -5.468091523358779,
+        -10.117840699623072,
+        -6.723659817597515,
+        -0.7599463978891277,
+        -1.3175791506493104,
+        2.393980410001975,
+        -4.609213421875936,
+        -8.861708303248488,
+        29.945191192007105,
+        5.19245139191864
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 34482.056072393934,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2025-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2025-04-30",
+    "information_set_date": "2025-07-31",
+    "training_months": 88,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.6217000399537665,
+      "ma.S.L12": -0.9959697929193725,
+      "sigma2": 460.75734591124547
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 702.7388299669906,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2025-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2025-04-30",
+    "information_set_date": "2025-07-31",
+    "training_months": 88,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 29186910.687888075,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2026-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2026-07-31",
+    "information_set_date": "2026-10-01",
+    "training_months": 103,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      147455250.05,
+      147455250.05,
+      147455250.05,
+      147455250.05,
+      147455250.05,
+      147455250.05,
+      147455250.05
+    ],
+    "seasonal_effects_HNL": {
+      "08": 9947574.999999993,
+      "09": 7640148.350000009,
+      "10": 6401783.387500018,
+      "11": 12177474.799999982,
+      "12": 15470315.787500016,
+      "01": 7835922.447500002,
+      "02": 3590116.9849999957
+    },
+    "seasonal_counts": {
+      "08": 6,
+      "09": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "01": 6,
+      "02": 6
+    },
+    "calibration_residuals": 70,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2026-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2026-07-31",
+    "information_set_date": "2026-10-01",
+    "training_months": 103,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.09207342326629259,
+      "smoothing_trend": 0.09207342326629259,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.9878514146165195,
+      "initial_level": 86.33014388158308,
+      "initial_trend": -0.8265561485410587,
+      "initial_seasons": [
+        1.705759198560044,
+        -1.4066318183260789,
+        -5.284264368847862,
+        -8.142374170095273,
+        -6.220963156567614,
+        1.6036312818864658,
+        -2.0050215359988988,
+        1.6829963284318497,
+        1.400257329926978,
+        -9.453049025771833,
+        26.282779014849968,
+        5.040330227576414
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 39190.26336754291,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2026-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2026-07-31",
+    "information_set_date": "2026-10-01",
+    "training_months": 103,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.7276393803950459,
+      "ma.S.L12": -0.8444093304739073,
+      "sigma2": 488.83259292100826
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 833.7411468267459,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2026-07-31",
+    "timing": "reporting_cutoff",
+    "training_cutoff": "2026-07-31",
+    "information_set_date": "2026-10-01",
+    "training_months": 103,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "seasonal_period": 12,
+    "seasonal_innovation_rms_HNL": 29611446.398902513,
+    "interval_method": "approximate_Gaussian_seasonal_random_walk_RMS",
+    "model": "seasonal_naive",
+    "origin": "2026-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2026-04-30",
+    "information_set_date": "2026-07-31",
+    "training_months": 100,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "trend_method": "rolling_median",
+    "trend_window": 12,
+    "forecast_trends_HNL": [
+      144237925.895,
+      144237925.895,
+      144237925.895,
+      144237925.895,
+      144237925.895,
+      144237925.895,
+      144237925.895,
+      144237925.895,
+      144237925.895,
+      144237925.895
+    ],
+    "seasonal_effects_HNL": {
+      "05": 2875599.3450000063,
+      "06": 15210166.354999997,
+      "07": 4774173.469999984,
+      "08": 9947574.999999993,
+      "09": 7640148.350000009,
+      "10": 6401783.387500018,
+      "11": 12177474.799999982,
+      "12": 15470315.787500016,
+      "01": 7835922.447500002,
+      "02": 3590116.9849999957
+    },
+    "seasonal_counts": {
+      "05": 6,
+      "06": 6,
+      "07": 6,
+      "08": 6,
+      "09": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "01": 6,
+      "02": 6
+    },
+    "calibration_residuals": 67,
+    "interval_calibration_warning": false,
+    "interval_method": "exploratory_centered_prequential_residual_circular_block_bootstrap",
+    "model": "trend_seasonality",
+    "origin": "2026-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2026-04-30",
+    "information_set_date": "2026-07-31",
+    "training_months": 100,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "trend": "add",
+      "seasonal": "add",
+      "damped_trend": true,
+      "seasonal_periods": 12
+    },
+    "parameters_units": "million_HNL for level/trend/seasonal states; smoothing parameters dimensionless",
+    "parameters": {
+      "smoothing_level": 0.31221121382945144,
+      "smoothing_trend": 0.0,
+      "smoothing_seasonal": 0.0,
+      "damping_trend": 0.9041055914931473,
+      "initial_level": 87.55581551493292,
+      "initial_trend": -1.1190655350318126,
+      "initial_seasons": [
+        1.7154165305766722,
+        -1.3324675546368612,
+        -5.152431160600069,
+        -7.913504555183294,
+        -6.340425382411482,
+        1.8860401904633541,
+        -1.489585796818477,
+        1.6871356506816895,
+        1.3940631584603327,
+        -9.45657833560215,
+        26.313942264572862,
+        5.1167908988101125
+      ],
+      "use_boxcox": false,
+      "lamda": null,
+      "remove_bias": false
+    },
+    "sse_million_HNL_squared": 39350.060308712025,
+    "converged": true,
+    "interval_method": "conditional_additive_residual_bootstrap_state_simulation",
+    "model": "holt_winters",
+    "origin": "2026-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2026-04-30",
+    "information_set_date": "2026-07-31",
+    "training_months": 100,
+    "warnings": [],
+    "seed": 271828
+  },
+  {
+    "specification": {
+      "order": [
+        0,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "trend": "n",
+      "maxiter": 500
+    },
+    "parameters": {
+      "ma.L1": -0.7243492660503213,
+      "ma.S.L12": -0.8216313931698783,
+      "sigma2": 512.5030382653074
+    },
+    "parameter_units": "MA parameters dimensionless; sigma2 in million_HNL_squared",
+    "converged": true,
+    "aic": 809.4850367311491,
+    "interval_method": "conditional_Gaussian_state_space_prediction",
+    "model": "sarima",
+    "origin": "2026-07-31",
+    "timing": "lag_aware",
+    "training_cutoff": "2026-04-30",
+    "information_set_date": "2026-07-31",
+    "training_months": 100,
+    "warnings": [],
+    "seed": 271828
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "development_nominee": "trend_seasonality",
+  "development_reason": "Development-only MAE improvement \u22655%, RMSE no worse; 1% MAE parsimony tie-break.",
+  "selected_model": "trend_seasonality",
+  "confirmation_decision": "Predeclared confirmation gate passed.",
+  "predeclared_gate": {
+    "minimum_mae_improvement": 0.05,
+    "maximum_rmse_ratio": 1.0,
+    "parsimony_tolerance": 0.01,
+    "confirmation_gate": true
+  },
+  "no_hyperparameter_search": true,
+  "confirmation_role": "Predeclared accept/reject gate, not an untouched test of the final gated choice. Development nominee metrics remain separately reported.",
+  "no_claim_of_statistical_significance": true
+}

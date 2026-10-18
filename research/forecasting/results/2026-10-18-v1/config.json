@@ -1,0 +1,71 @@
+{
+  "experiment_version": "claims-forecast-v1",
+  "observation_cutoff": "2026-07-31",
+  "horizon": 7,
+  "seasonal_period": 12,
+  "development_origins": [
+    2021,
+    2022,
+    2023
+  ],
+  "confirmation_origins": [
+    2024,
+    2025
+  ],
+  "minimum_training_months": 40,
+  "models": [
+    "seasonal_naive",
+    "trend_seasonality",
+    "holt_winters",
+    "sarima"
+  ],
+  "complexity_order": [
+    "seasonal_naive",
+    "trend_seasonality",
+    "holt_winters",
+    "sarima"
+  ],
+  "trend_method": "rolling_median",
+  "trend_window": 12,
+  "minimum_trend_history": 9,
+  "minimum_seasonal_history": 2,
+  "seasonal_lookback_years": 6,
+  "holt_winters": {
+    "trend": "add",
+    "seasonal": "add",
+    "damped_trend": true,
+    "seasonal_periods": 12
+  },
+  "sarima": {
+    "order": [
+      0,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      1,
+      12
+    ],
+    "trend": "n",
+    "maxiter": 500
+  },
+  "selection": {
+    "minimum_mae_improvement": 0.05,
+    "maximum_rmse_ratio": 1.0,
+    "parsimony_tolerance": 0.01,
+    "confirmation_gate": true
+  },
+  "seed": 271828,
+  "interval_simulations": 5000,
+  "interval_levels": [
+    0.8,
+    0.95
+  ],
+  "negative_policy": "retain",
+  "outlier_policy": "retain_all",
+  "missing_month_policy": "stop",
+  "target": "dynamic_eligible_reported_market_monthly_claims_HNL",
+  "cohort": "dynamic_observed_codes_no_legal_continuity_inferred"
+}

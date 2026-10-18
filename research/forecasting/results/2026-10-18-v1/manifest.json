@@ -1,0 +1,42 @@
+{
+  "experiment_version": "claims-forecast-v1",
+  "execution_started_utc": "2026-10-18T00:32:13.398091+00:00",
+  "execution_completed_utc": "2026-10-18T00:32:31.293443+00:00",
+  "git_commit_at_execution": "a78ba5da8de3dad2b279dd25cfbffc14a730243e",
+  "branch_at_execution": "research/claims-forecast-2026-2027",
+  "research_files_uncommitted_at_execution": true,
+  "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.10.7"
+  },
+  "research_source_sha256": {
+    "research/forecasting/__init__.py": "7badbf664ad72839a6df039619176c991ce04ec21f49f87c95b6685d8297f8d8",
+    "research/forecasting/audit.py": "e98a098fe383dd9f0c0e033a02f61f198877caa301d67222245bd9f48e91c725",
+    "research/forecasting/experiment.py": "64b125676df09a56ca90f60a80f7c42d4c1be2c6c2892274aa5bd2d777ffdce9",
+    "research/forecasting/models.py": "9ffb7c932cb7d898b5b7f2e6e8617e8a0bd46d823fcd1895e65a19055b517a78"
+  },
+  "selected_model": "trend_seasonality",
+  "artifact_sha256": {
+    "seven_month_forecast.csv": "51c3c3ba74d3d88e1f1b0f993d156e76dc83948346437c5d3177f74868bc8367",
+    "historical_backtests.png": "9725bbfea0842f4d08187c8309b707d36c98aece67cc4fe5bf1f4a535ee592d8",
+    "failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "backtest_origins.png": "f10bee72be44f3947ecc1de5e6dee325bb5c6af6ba8bf6fa0df51a8117fb20e9",
+    "model_comparison.csv": "0e53baff0714e4741c8dc22464cc9b167092b85072cd9eb0749dc0b60e26b261",
+    "estimated_parameters.json": "ffd2d9372af7da2098649daa94468b101cbcab4f599a490fe875555120931d7d",
+    "source_provenance.json": "d08d2f3c21a69abad8f1f1adeb7afe5edc8187cf777b8de9f211cf2a976e8c72",
+    "research_report.md": "50b7cdfc942e04258e0e7ad9d147f3575488ddd8ed7dc081d8f07e6b8f40c834",
+    "config.json": "b2ccb7c9c571996044a7f9aed4f2aea3c1f78ec4bc66f5382f4c4b9f9147ba4d",
+    "horizon_errors.csv": "a8e0b061af6913289793408a5b6feae687f84c3a0e92dd2cc9b7d8e10b816b54",
+    "environment.lock.txt": "6ae728f85ea8e1ccbc00e2aecba73b30ac4bb244f776a20efb5ab93c81b29d5a",
+    "training_series.csv": "9033bce7f9456fb5858a2527faecb0d04bae7b7f28981895e2adeee19f94891f",
+    "forecast_uncertainty.png": "08d0d570669bf2902d4caff8e47f91bd6bea712e3104906c47de5230eadaf03f",
+    "selection.json": "3fe77639ea80eff8327985c16281a1bf9ca4a1019c1922894d408b0369136247",
+    "backtest_predictions.csv": "6ab512e65976f876fa3a122b650c001a541639db7441264acfe6cf5f053ca359",
+    "all_model_forecasts.csv": "2a0213e3db2bea500601d456ab59277d0af4c3273dff69820873c379913db672"
+  }
+}
