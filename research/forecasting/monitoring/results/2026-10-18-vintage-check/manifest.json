@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-18T01:35:01.002676+00:00",
+  "registry_sha256": {
+    "research/forecasting/monitoring/snapshots/retained-2026-10-03.json": "d4c15a62da70dd6556aef46dce453e687572649a9b2c5905328d01e93626319e"
+  },
+  "artifact_sha256": {
+    "revision_report.json": "4dcd577a5a70b14bae7ae5883d85de4f4b582592df154b11a70c02ba9b8f7d17",
+    "revision_report.md": "61f2eeede7436c55e461f638496764b9ac729aa1536229b387f90b03c1da2692"
+  }
+}

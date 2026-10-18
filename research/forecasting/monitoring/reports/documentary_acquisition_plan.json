@@ -1,0 +1,25 @@
+{
+  "purpose": "Official documentary evidence on accounting framework and publication obligations; not new observational data.",
+  "created_utc": "2026-10-18T01:33:55.418249+00:00",
+  "isolation": ".local/forecasting/monitoring/evidence",
+  "observation_downloads": 0,
+  "sources": [
+    {
+      "filename": "gazette_2018_34728.pdf",
+      "url": "https://circulares.cnbs.gob.hn/Archivo/Viewer/267/Gaceta%2034728%20Resolucion%20GES%20745%2021-08-2018.pdf",
+      "pages": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "filename": "circular_007_2022.pdf",
+      "url": "https://circulares.cnbs.gob.hn/Archivo/Viewer/28/1",
+      "pages": [
+        1,
+        2
+      ]
+    }
+  ]
+}

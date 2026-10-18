@@ -1,0 +1,22 @@
+{
+  "version": "claims-monitoring-phase3-v1",
+  "forecast_bundle": "research/forecasting/results/2026-10-18-v1",
+  "robustness_bundle": "research/forecasting/robustness/results/2026-10-18-v2",
+  "robustness_supplement": "research/forecasting/robustness/results/2026-10-18-v2-interval-audit",
+  "target_start": "2026-08-31",
+  "target_end": "2027-02-28",
+  "horizon": 7,
+  "raw_storage_root": ".local/forecasting/monitoring/snapshots",
+  "resource_id": "b36f83a9-d763-41da-809b-7e379fac990f",
+  "source_url": "https://datos.cnbs.gob.hn/datastore/dump/b36f83a9-d763-41da-809b-7e379fac990f",
+  "metadata_url": "https://datos.cnbs.gob.hn/api/3/action/package_show?id=primas-y-siniestros",
+  "primary_evaluation_basis": "retained_snapshot_receipt_asof",
+  "secondary_evaluation_basis": "unchanged_simulated_availability",
+  "missing_outcome_policy": "explicit_null_no_zero_fill",
+  "negative_increment_policy": "retain_with_warning",
+  "partial_market_policy": "retain_eligible_accounting_sum_with_warning",
+  "forecast_modification": "forbidden",
+  "automatic_latest_snapshot_selection": false,
+  "automatic_download": false,
+  "strict_point_in_time": "NOT_VALIDATED"
+}

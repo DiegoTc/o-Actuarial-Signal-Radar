@@ -1,0 +1,33 @@
+[
+  {
+    "filename": "gazette_2018_34728.pdf",
+    "url": "https://circulares.cnbs.gob.hn/Archivo/Viewer/267/Gaceta%2034728%20Resolucion%20GES%20745%2021-08-2018.pdf",
+    "pages": [
+      2,
+      3,
+      4
+    ],
+    "archived_path": ".local/forecasting/monitoring/evidence/gazette_2018_34728.pdf",
+    "sha256": "059827e1e074737dbddb67e7e4db2cb2f11b4e7a61852b76327b04fbd02d6435",
+    "file_size": 3514089,
+    "receipt_recorded_utc": "2026-10-18T01:35:27.788818+00:00",
+    "local_file_written_utc": "2026-10-18T01:34:01.417913+00:00",
+    "retrieval_method": "explicit_documentary_https_request_http200",
+    "observation_data": false
+  },
+  {
+    "filename": "circular_007_2022.pdf",
+    "url": "https://circulares.cnbs.gob.hn/Archivo/Viewer/28/1",
+    "pages": [
+      1,
+      2
+    ],
+    "archived_path": ".local/forecasting/monitoring/evidence/circular_007_2022.pdf",
+    "sha256": "dc6bbb96afceb2aeea5e25468ba1952115c82ac778ecd630e89272fb21a11835",
+    "file_size": 946879,
+    "receipt_recorded_utc": "2026-10-18T01:35:27.840961+00:00",
+    "local_file_written_utc": "2026-10-18T01:34:01.311920+00:00",
+    "retrieval_method": "explicit_documentary_https_request_http200",
+    "observation_data": false
+  }
+]

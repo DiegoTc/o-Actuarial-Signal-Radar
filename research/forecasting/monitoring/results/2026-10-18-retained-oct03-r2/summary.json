@@ -1,0 +1,44 @@
+{
+  "receipt_based_metrics": {
+    "n": 1,
+    "missing_targets": 6,
+    "MAE_HNL": 2144485.23999996,
+    "RMSE_HNL": 2144485.23999996,
+    "WAPE_pct": 1.381236745558602,
+    "bias_HNL": 2144485.23999996,
+    "coverage_80": 1.0,
+    "coverage_95": 1.0
+  },
+  "simulated_lag_eligible_metrics": {
+    "n": 0,
+    "missing_targets": 7,
+    "MAE_HNL": null,
+    "RMSE_HNL": null,
+    "WAPE_pct": null,
+    "bias_HNL": null,
+    "coverage_80": null,
+    "coverage_95": null
+  },
+  "retrospective_receipt_metrics": {
+    "n": 1,
+    "missing_targets": 1,
+    "MAE_HNL": 2144485.23999996,
+    "RMSE_HNL": 2144485.23999996,
+    "WAPE_pct": 1.381236745558602,
+    "bias_HNL": 2144485.23999996,
+    "coverage_80": 1.0,
+    "coverage_95": 1.0
+  },
+  "targets_not_completed_at_execution_metrics": {
+    "n": 0,
+    "missing_targets": 5,
+    "MAE_HNL": null,
+    "RMSE_HNL": null,
+    "WAPE_pct": null,
+    "bias_HNL": null,
+    "coverage_80": null,
+    "coverage_95": null
+  },
+  "full_horizon_evaluated": false,
+  "interpretation": "Partial, snapshot-specific monitoring; not an independent prospective validation."
+}
