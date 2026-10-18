@@ -1,0 +1,100 @@
+[
+  {
+    "candidate": "median_6",
+    "trend_method": "rolling_median",
+    "window": 6,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "median_12",
+    "trend_method": "rolling_median",
+    "window": 12,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "median_18",
+    "trend_method": "rolling_median",
+    "window": 18,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "median_24",
+    "trend_method": "rolling_median",
+    "window": 24,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "mean_6",
+    "trend_method": "rolling_mean",
+    "window": 6,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "mean_12",
+    "trend_method": "rolling_mean",
+    "window": 12,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "mean_18",
+    "trend_method": "rolling_mean",
+    "window": 18,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "mean_24",
+    "trend_method": "rolling_mean",
+    "window": 24,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "linear_12",
+    "trend_method": "trailing_linear",
+    "window": 12,
+    "seasonal_method": "median",
+    "lookback": 6
+  },
+  {
+    "candidate": "seasonal_median_3",
+    "trend_method": "rolling_median",
+    "window": 12,
+    "seasonal_method": "median",
+    "lookback": 3
+  },
+  {
+    "candidate": "seasonal_median_4",
+    "trend_method": "rolling_median",
+    "window": 12,
+    "seasonal_method": "median",
+    "lookback": 4
+  },
+  {
+    "candidate": "seasonal_mean_6",
+    "trend_method": "rolling_median",
+    "window": 12,
+    "seasonal_method": "mean",
+    "lookback": 6
+  },
+  {
+    "candidate": "seasonal_mean_3",
+    "trend_method": "rolling_median",
+    "window": 12,
+    "seasonal_method": "mean",
+    "lookback": 3
+  },
+  {
+    "candidate": "seasonal_harmonic_6",
+    "trend_method": "rolling_median",
+    "window": 12,
+    "seasonal_method": "harmonic",
+    "lookback": 6
+  }
+]

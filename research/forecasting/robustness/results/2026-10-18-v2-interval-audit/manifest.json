@@ -1,0 +1,17 @@
+{
+  "execution_utc": "2026-10-18T00:55:34.436685+00:00",
+  "analysis": "post_primary_exploratory_calibration_pool_influence",
+  "protocol_sha256_before_calculation": "ca3806545f1037f7172cc6fdfddd8a5c737251d2a291f4de40abe9411c97989f",
+  "source_sha256": {
+    "research/forecasting/robustness/interval_influence.py": "91edf368eaa941e16337dc489a185d2e0565e55f579c2f6c1f4e41a8135acb74"
+  },
+  "primary_v2_manifest_sha256": "f408f17cdde4293138f29e290d494ff5b87138a831d370a2867cfe6fcec3b5ae",
+  "v1_manifest_sha256": "4fa2bba9eb327f8768a3f8f5a43af4bf4a9d8afd48a9dc5be8888ff745071353",
+  "artifact_sha256": {
+    "interval_influence_summary.csv": "bf889ca8875da2bebf41b9774b390777853408c8be8146e4e232926cd5c1d710",
+    "residual_influence.csv": "1cd5d9f4f18d304d9feab17ec09c40e51e22e63862414276ef69c3cd80552c99",
+    "interval_influence_predictions.csv": "04337c88667066acf098d8e0f29458823dcf0d6c7477da3f30058aaa996339e2",
+    "unavailable.json": "c7b7ef079e107fe7ac7d854cf5a733ee6f3dbfca9cd2e29f620f563f934fe3a9",
+    "protocol.md": "ca3806545f1037f7172cc6fdfddd8a5c737251d2a291f4de40abe9411c97989f"
+  }
+}

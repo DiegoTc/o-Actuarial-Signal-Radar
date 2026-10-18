@@ -1,0 +1,94 @@
+{
+  "status": "CONDITIONALLY_READY_CURRENT_VINTAGE",
+  "audit_execution_utc": "2026-10-18T00:53:48.974012+00:00",
+  "observation_cutoff": "2026-07-31",
+  "source_snapshot": {
+    "primas": {
+      "source_url": "https://datos.cnbs.gob.hn/datastore/dump/d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370",
+      "resource_id": "d7d9ce8c-3b6b-4eb4-bf9b-93333d07f370",
+      "download_timestamp": "2026-10-03T16:41:13.601202+00:00",
+      "sha256": "f31720f195a754962ccb6e5fb527e7fffd41a6284201312a66e2bf3bc20bad9f",
+      "rows": 20359
+    },
+    "siniestros": {
+      "source_url": "https://datos.cnbs.gob.hn/datastore/dump/b36f83a9-d763-41da-809b-7e379fac990f",
+      "resource_id": "b36f83a9-d763-41da-809b-7e379fac990f",
+      "download_timestamp": "2026-10-03T16:41:14.238865+00:00",
+      "sha256": "7b92116c301279b38fc2fa1c6d531e5a2d8000466f0a9bf716e1a51144e4e5c5",
+      "rows": 17445
+    }
+  },
+  "file_sha256": {
+    "data/processed/cnbs/monthly/automobile_siniestros.csv": "f52316aeac33691e9d693f1a426bbbaa847bfb29e2c2aa356b4943dc8687ad14",
+    "data/processed/cnbs/monthly/monthly_derivation_manifest.json": "1f1cd9cc0c0e3dd99ddc1997576ecda131785d3e128bb6465d8e09da105629bd",
+    "config/cnbs_semantics.json": "c719d7ad4b8d6a8dbe027fb3945d4e97fe027baf0fa0af2cd56e4101a07d3fdf",
+    "config/expected_behavior.json": "c794308d00af209584fc97bc50421ba2cf819b4e8b8e22be0fcf5d14c01c3d00",
+    "actuarial-engine/preprocessing/availability.py": "d8ac21214e28479beb1b9998d81d6371e0156dacca08a8cd26a583f714f6463d",
+    "actuarial-engine/preprocessing/semantics.py": "792d7fbf621ca159aae3b89e0de40c4518f48be98a854c3d3ce4502fcc9ecd81",
+    "actuarial-engine/statistical/data.py": "5380d51c16e6eb00e0c8b42565b2bfd4e3976d76dbffbb86bcf3419c3b03289d",
+    "actuarial-engine/expected_behavior/model.py": "3a001791cc51793c814c8a344e5a43daf159fa880c1a94852c905bbd5f6ebafe"
+  },
+  "training_start": "2018-01-31",
+  "training_end": "2026-07-31",
+  "market_months": 103,
+  "institution_rows": 1133,
+  "blocked_rows": 1,
+  "negative_increments": 19,
+  "review_rows": 22,
+  "derivation_status_counts": {
+    "derived_january": 98,
+    "derived_consecutive_month": 1012,
+    "derived_consecutive_month_review": 21,
+    "blocked_missing_prior_month": 1,
+    "derived_january_review": 1
+  },
+  "post_cutoff_rows_excluded": 11,
+  "partial_market_periods": [
+    {
+      "report_date": "2019-10-31",
+      "value": 59978056.45,
+      "contributing_institutions": 10,
+      "excluded_codes": "0616;0618",
+      "quality_flags": "market_composition_changed;market_partial_coverage;negative_increment_review;source_review_sensitive"
+    }
+  ],
+  "negative_market_periods": 0,
+  "months_with_negative_contributors": 17,
+  "composition_changes": [
+    {
+      "report_date": "2019-10-31",
+      "entered_codes": "0618",
+      "exited_codes": "0616"
+    }
+  ],
+  "largest_market_months": [
+    {
+      "report_date": "2020-11-30",
+      "value": 226427838.52,
+      "quality_flags": ""
+    },
+    {
+      "report_date": "2025-09-30",
+      "value": 185377003.67,
+      "quality_flags": ""
+    },
+    {
+      "report_date": "2025-06-30",
+      "value": 160282129.07,
+      "quality_flags": "institution_label_change_same_code;source_review_sensitive"
+    },
+    {
+      "report_date": "2026-04-30",
+      "value": 158249512.99,
+      "quality_flags": ""
+    },
+    {
+      "report_date": "2026-06-30",
+      "value": 154614039.42999998,
+      "quality_flags": ""
+    }
+  ],
+  "simulated_information_set_date_for_full_July_cutoff": "2026-10-01",
+  "strict_point_in_time": "NOT_VALIDATED",
+  "new_downloads": false
+}

@@ -1,0 +1,86 @@
+{
+  "version": "claims-robustness-v2",
+  "observation_cutoff": "2026-07-31",
+  "horizon": 7,
+  "minimum_training_months": 48,
+  "trend_windows": [
+    6,
+    12,
+    18,
+    24
+  ],
+  "trend_methods": [
+    "rolling_median",
+    "rolling_mean"
+  ],
+  "minimum_trend_fraction": 0.75,
+  "linear_window": 12,
+  "seasonal_variants": [
+    {
+      "method": "median",
+      "lookback_years": 6
+    },
+    {
+      "method": "median",
+      "lookback_years": 3
+    },
+    {
+      "method": "median",
+      "lookback_years": 4
+    },
+    {
+      "method": "mean",
+      "lookback_years": 6
+    },
+    {
+      "method": "mean",
+      "lookback_years": 3
+    },
+    {
+      "method": "harmonic",
+      "lookback_years": 6
+    }
+  ],
+  "minimum_seasonal_history": 2,
+  "minimum_harmonic_history": 24,
+  "origin_months": [
+    1,
+    4,
+    7,
+    10
+  ],
+  "first_origin": "2022-01-31",
+  "last_origin": "2025-10-31",
+  "legacy_origins": [
+    "2021-07-31",
+    "2022-07-31",
+    "2023-07-31",
+    "2024-07-31",
+    "2025-07-31"
+  ],
+  "early_origin_end": "2023-12-31",
+  "calibration_first_origin": "2021-04-30",
+  "minimum_calibration_origins": 12,
+  "interval_levels": [
+    0.8,
+    0.95
+  ],
+  "interval_quantile_method": "linear",
+  "interval_simulations": 5000,
+  "seed": 271828,
+  "influence_dates": [
+    "2019-10-31",
+    "2020-11-30",
+    "2025-09-30"
+  ],
+  "influence_candidates": [
+    "median_12",
+    "mean_12",
+    "median_24"
+  ],
+  "primary_missing_policy": "stop",
+  "primary_negative_policy": "retain",
+  "primary_extreme_policy": "retain",
+  "replacement_of_v1": false,
+  "all_comparisons_exploratory": true
+}

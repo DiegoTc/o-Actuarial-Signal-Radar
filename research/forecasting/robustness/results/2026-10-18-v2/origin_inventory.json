@@ -1,0 +1,16 @@
+{
+  "distinct_origins": 16,
+  "forecast_errors_per_complete_candidate": 112,
+  "unique_target_months": 52,
+  "maximum_disjoint_target_windows": 6,
+  "disjoint_origin_subset": [
+    "2022-01-31",
+    "2022-10-31",
+    "2023-07-31",
+    "2024-04-30",
+    "2025-01-31",
+    "2025-10-31"
+  ],
+  "statistically_independent_origins": "UNKNOWN_NOT_ASSUMED",
+  "shared_training_and_overlapping_targets": true
+}

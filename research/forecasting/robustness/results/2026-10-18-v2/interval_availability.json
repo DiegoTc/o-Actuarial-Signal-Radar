@@ -1,0 +1,212 @@
+[
+  {
+    "origin": "2022-01-31",
+    "timing": "reporting_cutoff",
+    "status": "insufficient_calibration",
+    "calibration_origins": 3
+  },
+  {
+    "origin": "2022-04-30",
+    "timing": "reporting_cutoff",
+    "status": "insufficient_calibration",
+    "calibration_origins": 6
+  },
+  {
+    "origin": "2022-07-31",
+    "timing": "reporting_cutoff",
+    "status": "insufficient_calibration",
+    "calibration_origins": 9
+  },
+  {
+    "origin": "2022-10-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 12
+  },
+  {
+    "origin": "2023-01-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 15
+  },
+  {
+    "origin": "2023-04-30",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 18
+  },
+  {
+    "origin": "2023-07-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 21
+  },
+  {
+    "origin": "2023-10-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 24
+  },
+  {
+    "origin": "2024-01-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 27
+  },
+  {
+    "origin": "2024-04-30",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 30
+  },
+  {
+    "origin": "2024-07-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 33
+  },
+  {
+    "origin": "2024-10-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 36
+  },
+  {
+    "origin": "2025-01-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 39
+  },
+  {
+    "origin": "2025-04-30",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 42
+  },
+  {
+    "origin": "2025-07-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 45
+  },
+  {
+    "origin": "2025-10-31",
+    "timing": "reporting_cutoff",
+    "status": "available",
+    "calibration_origins": 48
+  },
+  {
+    "origin": "2021-04-30",
+    "timing": "lag_aware",
+    "status": "calibration_fit_failed",
+    "reason": "Insufficient declared training history"
+  },
+  {
+    "origin": "2021-05-31",
+    "timing": "lag_aware",
+    "status": "calibration_fit_failed",
+    "reason": "Insufficient declared training history"
+  },
+  {
+    "origin": "2021-06-30",
+    "timing": "lag_aware",
+    "status": "calibration_fit_failed",
+    "reason": "Insufficient declared training history"
+  },
+  {
+    "origin": "2022-01-31",
+    "timing": "lag_aware",
+    "status": "insufficient_calibration",
+    "calibration_origins": 0
+  },
+  {
+    "origin": "2022-04-30",
+    "timing": "lag_aware",
+    "status": "insufficient_calibration",
+    "calibration_origins": 0
+  },
+  {
+    "origin": "2022-07-31",
+    "timing": "lag_aware",
+    "status": "insufficient_calibration",
+    "calibration_origins": 3
+  },
+  {
+    "origin": "2022-10-31",
+    "timing": "lag_aware",
+    "status": "insufficient_calibration",
+    "calibration_origins": 6
+  },
+  {
+    "origin": "2023-01-31",
+    "timing": "lag_aware",
+    "status": "insufficient_calibration",
+    "calibration_origins": 9
+  },
+  {
+    "origin": "2023-04-30",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 12
+  },
+  {
+    "origin": "2023-07-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 15
+  },
+  {
+    "origin": "2023-10-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 18
+  },
+  {
+    "origin": "2024-01-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 21
+  },
+  {
+    "origin": "2024-04-30",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 24
+  },
+  {
+    "origin": "2024-07-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 27
+  },
+  {
+    "origin": "2024-10-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 30
+  },
+  {
+    "origin": "2025-01-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 33
+  },
+  {
+    "origin": "2025-04-30",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 36
+  },
+  {
+    "origin": "2025-07-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 39
+  },
+  {
+    "origin": "2025-10-31",
+    "timing": "lag_aware",
+    "status": "available",
+    "calibration_origins": 42
+  }
+]

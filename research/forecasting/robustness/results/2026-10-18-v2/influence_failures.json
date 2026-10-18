@@ -1,0 +1,14 @@
+[
+  {
+    "candidate": "median_24",
+    "origin": "2021-07-31",
+    "masked_date": "2019-10-31",
+    "reason": "Insufficient prior-year seasonal innovations"
+  },
+  {
+    "candidate": "median_24",
+    "origin": "2021-07-31",
+    "masked_date": "2020-11-30",
+    "reason": "Insufficient prior-year seasonal innovations"
+  }
+]
